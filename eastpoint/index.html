@@ -1,1 +1,408 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Eastpoint Documentation Program | Walton Creative Group">
+<meta property="og:description" content="A proposal to document Eastpoint as it comes out of the ground, for The Fallon Company.">
+<meta property="og:image" content="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png">
+<title>Eastpoint Documentation Program | Walton Creative Group x The Fallon Company</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#695684;--mid:#7E679B;--light:#B8A3CE;--cream:#F5F2EE;--ink:#1A1A1A;--paper:#FFFFFF;
+  --display:'IBM Plex Mono','Courier New',monospace;--body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 40px;background:rgba(245,242,238,0.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(105,86,132,0.12);transition:padding .3s ease;}
+.nav.shrink{padding:10px 40px;}
+.nav-brand{display:flex;align-items:center;gap:12px;}
+.nav-brand img{width:40px;height:40px;border-radius:50%;}
+.nav-brand span{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dark);}
+.nav-links{display:flex;gap:30px;}
+.nav-links a{font-family:var(--display);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--dark);}
+.nav-cta{font-family:var(--display);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  background:var(--dark);color:#fff;padding:9px 18px;border-radius:3px;text-decoration:none;transition:background .2s;}
+.nav-cta:hover{background:var(--mid);}
+@media(max-width:860px){.nav-links{display:none;}.nav{padding:14px 20px;}}
+.hero{min-height:100vh;background:radial-gradient(1200px 700px at 70% -10%,#7E679B 0%,#695684 45%,#4f3f66 100%);
+  color:#fff;display:flex;flex-direction:column;justify-content:center;padding:140px 8vw 80px;position:relative;overflow:hidden;}
+.hero-accent{position:absolute;right:-6vw;bottom:-6vw;width:46vw;height:46vw;background:var(--mid);opacity:.35;clip-path:polygon(100% 0,100% 100%,0 100%);}
+.hero-accent2{position:absolute;right:-3vw;bottom:-3vw;width:28vw;height:28vw;background:var(--light);opacity:.28;clip-path:polygon(100% 0,100% 100%,0 100%);}
+.hero-badge{width:78px;height:78px;border-radius:50%;margin-bottom:34px;box-shadow:0 10px 40px rgba(0,0,0,.25);position:relative;z-index:2;}
+.hero-tag{font-family:var(--display);font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--light);margin-bottom:22px;position:relative;z-index:2;}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,6.4vw,80px);line-height:1.02;letter-spacing:-.02em;margin-bottom:26px;position:relative;z-index:2;max-width:16ch;}
+.hero h1 em{font-style:normal;color:var(--light);}
+.hero-sub{font-size:clamp(15px,1.5vw,19px);max-width:50ch;opacity:.92;font-weight:300;position:relative;z-index:2;margin-bottom:40px;}
+.hero-meta{display:flex;gap:42px;flex-wrap:wrap;position:relative;z-index:2;}
+.hero-meta div{font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--light);}
+.hero-meta strong{display:block;color:#fff;font-size:15px;letter-spacing:.04em;margin-top:6px;font-weight:600;}
+.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-family:var(--display);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light);z-index:2;animation:bob 2s ease-in-out infinite;opacity:.8;}
+@keyframes bob{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,8px);}}
+.section{padding:110px 8vw;position:relative;}
+.section.cream{background:var(--cream);}
+.section.paper{background:var(--paper);}
+.section.dark{background:linear-gradient(160deg,#695684,#4f3f66);color:#fff;}
+.eyebrow{font-family:var(--display);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mid);margin-bottom:18px;}
+.dark .eyebrow{color:var(--light);}
+.section h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,46px);line-height:1.08;letter-spacing:-.015em;color:var(--dark);margin-bottom:26px;max-width:20ch;}
+.dark h2{color:#fff;}
+.lead{font-size:clamp(15px,1.4vw,18px);max-width:62ch;color:var(--ink);opacity:.86;margin-bottom:14px;}
+.dark .lead{color:#fff;opacity:.9;}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:46px;}
+.obj{background:var(--paper);border:1px solid rgba(105,86,132,.16);border-radius:10px;padding:30px 26px;transition:transform .3s,box-shadow .3s;}
+.obj:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(105,86,132,.16);}
+.obj .num{font-family:var(--display);font-size:13px;font-weight:700;color:var(--light);letter-spacing:.1em;margin-bottom:14px;}
+.obj p{font-size:14.5px;color:var(--ink);opacity:.88;}
+.phases{margin-top:50px;display:grid;gap:2px;background:rgba(105,86,132,.14);border-radius:12px;overflow:hidden;}
+.phase{background:var(--paper);padding:34px 36px;display:grid;grid-template-columns:80px 1fr;gap:26px;align-items:start;transition:background .3s;}
+.phase:hover{background:#faf8f5;}
+.phase .pn{font-family:var(--display);font-weight:700;font-size:34px;color:var(--light);line-height:1;}
+.phase h3{font-family:var(--body);font-weight:700;font-size:18px;color:var(--dark);margin-bottom:8px;}
+.phase p{font-size:14.5px;opacity:.86;max-width:62ch;}
+@media(max-width:620px){.phase{grid-template-columns:1fr;gap:10px;}}
+.tl{margin-top:48px;border-left:2px solid var(--light);}
+.tl-row{display:grid;grid-template-columns:200px 1fr;gap:30px;padding:22px 0 22px 34px;position:relative;border-bottom:1px solid rgba(105,86,132,.12);}
+.tl-row::before{content:'';position:absolute;left:-7px;top:28px;width:12px;height:12px;border-radius:50%;background:var(--dark);border:2px solid var(--cream);}
+.tl-when{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dark);}
+.tl-what{font-size:14.5px;opacity:.86;}
+.tl-row.flag .tl-when{color:var(--mid);}
+@media(max-width:620px){.tl-row{grid-template-columns:1fr;gap:6px;}}
+.featured{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px;}
+@media(max-width:860px){.featured{grid-template-columns:1fr;}}
+.reel{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:30px;}
+.lite{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center;background-color:var(--dark);box-shadow:0 16px 50px rgba(0,0,0,.3);transition:transform .35s,box-shadow .35s;}
+.lite::after{content:'';display:block;padding-top:56.25%;}
+.lite:hover{transform:translateY(-6px);box-shadow:0 22px 56px rgba(0,0,0,.42);}
+.lite .ov{position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(to top,rgba(31,24,48,.9),rgba(31,24,48,.12) 56%,rgba(31,24,48,.5));transition:background .3s;}
+.lite:hover .ov{background:linear-gradient(to top,rgba(31,24,48,.93),rgba(31,24,48,.22) 56%,rgba(31,24,48,.6));}
+.lite .cat{font-family:var(--display);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);position:relative;z-index:2;}
+.lite .nm{font-family:var(--body);font-weight:700;font-size:15px;color:#fff;line-height:1.2;position:relative;z-index:2;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+.feat .nm{font-size:19px;}
+.lite .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--dark);border:2.5px solid rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .3s,background .3s;z-index:2;}
+.lite:hover .play{transform:translate(-50%,-50%) scale(1.1);background:var(--mid);}
+.lite .play svg{width:24px;height:24px;fill:#fff;margin-left:4px;}
+.lite.playing{cursor:default;transform:none;}
+.lite.playing .ov{display:none;}
+.lite.playing iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.slot{position:relative;border-radius:12px;border:2px dashed #d06;background:rgba(208,0,102,.06);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;}
+.slot::after{content:'';display:block;padding-top:56.25%;}
+.slot span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;font-family:var(--display);font-size:12px;letter-spacing:.06em;color:#d06;line-height:1.5;}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px;align-items:stretch;}
+@media(max-width:860px){.tiers{grid-template-columns:1fr;max-width:420px;margin-inline:auto;}}
+.tier{background:var(--paper);border:1.5px solid rgba(105,86,132,.22);border-radius:14px;padding:34px 28px;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s;}
+.tier:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(105,86,132,.16);}
+.tier.rec{border:2px solid var(--dark);background:linear-gradient(170deg,#695684,#4f3f66);color:#fff;position:relative;box-shadow:0 22px 60px rgba(79,63,102,.32);}
+.tier.rec::before{content:'RECOMMENDED';position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--mid);color:#fff;font-family:var(--display);font-size:9px;font-weight:700;letter-spacing:.22em;padding:6px 16px;border-radius:20px;white-space:nowrap;}
+.tier .tn{font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);margin-bottom:12px;}
+.tier.rec .tn{color:var(--light);}
+.tier .tp{font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:-.02em;color:var(--dark);line-height:1;}
+.tier.rec .tp{color:#fff;}
+.tier .tc{font-size:12px;font-style:italic;color:var(--mid);margin:8px 0 22px;}
+.tier.rec .tc{color:var(--light);}
+.tier ul{list-style:none;flex:1;}
+.tier li{font-size:13.5px;line-height:1.45;padding-left:22px;position:relative;margin-bottom:11px;opacity:.92;}
+.tier li::before{content:'';position:absolute;left:0;top:9px;width:9px;height:2px;background:var(--mid);}
+.tier.rec li::before{background:var(--light);}
+.invest-note{margin-top:30px;font-size:12px;color:var(--mid);text-align:center;}
+.cer-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;margin-top:46px;align-items:center;}
+@media(max-width:860px){.cer-wrap{grid-template-columns:1fr;gap:30px;}}
+.cer-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:40px 36px;backdrop-filter:blur(4px);}
+.cer-card .from{font-family:var(--display);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:8px;}
+.cer-card .pn{font-size:13px;color:#fff;opacity:.8;margin-bottom:24px;}
+.cer-list{list-style:none;}
+.cer-list li{font-size:14px;padding-left:24px;position:relative;margin-bottom:12px;color:#fff;opacity:.94;}
+.cer-list li::before{content:'';position:absolute;left:0;top:9px;width:10px;height:2px;background:var(--light);}
+.cer-proof{font-size:15px;line-height:1.6;}
+.brand-logos{display:flex;flex-wrap:wrap;gap:34px;align-items:center;margin-top:14px;opacity:.7;}
+.brand-logos span{font-family:var(--display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--dark);}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:50px;}
+@media(max-width:720px){.stats{grid-template-columns:1fr 1fr;}}
+.stat{border-left:2px solid var(--mid);padding-left:18px;}
+.stat .n{font-family:var(--display);font-weight:700;font-size:40px;color:var(--dark);line-height:1;}
+.stat .l{font-family:var(--display);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-top:8px;}
+.terms{display:grid;grid-template-columns:1fr;gap:40px;margin-top:46px;max-width:64ch;}
+.terms h4{font-family:var(--display);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);margin-bottom:18px;}
+.terms ul{list-style:none;}
+.terms li{font-size:13.5px;padding-left:20px;position:relative;margin-bottom:12px;opacity:.86;}
+.terms li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:2px;background:var(--mid);}
+.cta{text-align:center;}
+.cta .big{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,42px);line-height:1.1;color:#fff;margin:0 auto 30px;max-width:22ch;}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:46px;}
+.btn{font-family:var(--display);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:16px 30px;border-radius:4px;text-decoration:none;transition:transform .25s,background .25s;display:inline-block;}
+.btn-solid{background:#fff;color:var(--dark);}
+.btn-solid:hover{transform:translateY(-3px);}
+.btn-ghost{border:1.5px solid var(--light);color:#fff;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);}
+.contact{font-size:15px;line-height:1.8;opacity:.92;}
+.contact a{color:var(--light);text-decoration:none;}
+.foot{background:#1f1830;color:#fff;padding:46px 8vw;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+.foot-brand{display:flex;align-items:center;gap:14px;}
+.foot-brand img{width:46px;height:46px;border-radius:50%;}
+.foot-brand div b{font-family:var(--display);letter-spacing:.2em;font-size:12px;text-transform:uppercase;}
+.foot-brand div p{font-size:11px;opacity:.6;margin-top:4px;}
+.foot-meta{font-family:var(--display);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;text-align:right;}
+@media print{.nav,.scroll-cue{display:none;}.section{padding:50px 6vw;}.hero{min-height:auto;padding:80px 6vw;}body{background:#fff;}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-brand">
+    <img src="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png" alt="WCG">
+    <span>Walton Creative Group</span>
+  </div>
+  <div class="nav-links">
+    <a href="#project">The Opportunity</a>
+    <a href="#work">Our Work</a>
+    <a href="#invest">Investment</a>
+    <a href="#events">Events</a>
+  </div>
+  <a href="#next" class="nav-cta">Start the Conversation</a>
+</nav>
+
+<header class="hero">
+  <img class="hero-badge" src="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png" alt="Walton Creative Group">
+  <div class="hero-tag">Walton Creative Group &nbsp;with&nbsp; Laws of Ace Films</div>
+  <h1>Build the Story<br>as You Build <em>Eastpoint.</em></h1>
+  <p class="hero-sub">A proposal to document Eastpoint at every stage, from the ground up, into stories your partners, investors, and community will remember.</p>
+  <div class="hero-meta">
+    <div>Prepared for<strong>The Fallon Company</strong></div>
+    <div>Project<strong>Eastpoint, Nashville</strong></div>
+    <div>Date<strong>June 11, 2026</strong></div>
+  </div>
+  <div class="hero-accent"></div>
+  <div class="hero-accent2"></div>
+  <div class="scroll-cue">Scroll to begin</div>
+</header>
+
+<section class="section paper" id="project">
+  <div class="reveal">
+    <div class="eyebrow">01 &nbsp;/&nbsp; The Opportunity</div>
+    <h2>One day captured. A whole build worth telling.</h2>
+    <p class="lead">Thank you, Kristen, for having us out to the Eastpoint neighborhood kickoff. Capturing that day was a privilege, and the response to the recap said a lot about what this project means to the people around it.</p>
+    <p class="lead">Eastpoint is going to come out of the ground over the next few years, and there is a story worth telling at every stage. The building itself, and the impact it creates in the community around it. This is exactly the kind of work we do for developers like Holladay Ventures, and we would love to document Eastpoint the same way, so you have something powerful to put in front of partners, investors, and the public the whole way through.</p>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="reveal">
+    <div class="eyebrow">02 &nbsp;/&nbsp; Objectives</div>
+    <h2>What the program is built to do.</h2>
+    <p class="lead">A documentation partnership that grows an asset library as Eastpoint grows.</p>
+  </div>
+  <div class="obj-grid">
+    <div class="obj reveal"><div class="num">01</div><p>Document Eastpoint at every stage, from groundbreaking through the build to the finished community.</p></div>
+    <div class="obj reveal"><div class="num">02</div><p>Capture the impact, not just the construction. The people, the partners, and the neighborhood the project serves.</p></div>
+    <div class="obj reveal"><div class="num">03</div><p>Produce stories ready for partners, investors, leasing, and public channels at each milestone.</p></div>
+    <div class="obj reveal"><div class="num">04</div><p>Build a footage and photography library that compounds in value across the multi year build.</p></div>
+    <div class="obj reveal"><div class="num">05</div><p>Keep a steady, planned cadence so the story is always current and nothing important goes uncaptured.</p></div>
+  </div>
+</section>
+
+<section class="section paper">
+  <div class="reveal">
+    <div class="eyebrow">03 &nbsp;/&nbsp; What We Deliver</div>
+    <h2>The work, in concrete terms.</h2>
+    <p class="lead">Four ways the program shows up across the year.</p>
+  </div>
+  <div class="phases reveal">
+    <div class="phase"><div class="pn">01</div><div><h3>Milestone capture visits</h3><p>Planned shoot days at the moments that matter. Groundbreaking, structure rising, topping out, interiors, and the finished community. Ground and drone coverage on every visit, so the progress is felt from the street and from the air.</p></div></div>
+    <div class="phase"><div class="pn">02</div><div><h3>Milestone and recap films</h3><p>Short, sharp films that mark each stage and a signature film that tells the full Eastpoint story to date. Built for partner updates, investor rooms, and public channels.</p></div></div>
+    <div class="phase"><div class="pn">03</div><div><h3>Story and impact pieces</h3><p>Property and unit tours, plus the human side. The partners, the team, and the community Eastpoint serves. The pieces that turn a construction project into a story people care about.</p></div></div>
+    <div class="phase"><div class="pn">04</div><div><h3>Social cuts and a growing library</h3><p>Vertical cuts formatted for your channels, plus a photography set from each visit. Every shoot adds to a library you own and can pull from for years.</p></div></div>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="reveal">
+    <div class="eyebrow">04 &nbsp;/&nbsp; The Documentation Arc</div>
+    <h2>A planned cadence across the build.</h2>
+    <p class="lead">Year one sets the rhythm. The program continues stage by stage as Eastpoint rises.</p>
+  </div>
+  <div class="tl reveal">
+    <div class="tl-row flag"><div class="tl-when">Already captured</div><div class="tl-what">The Eastpoint neighborhood kickoff, filmed and recapped. The starting point of the story.</div></div>
+    <div class="tl-row"><div class="tl-when">Kickoff call</div><div class="tl-what">We map the build calendar with your team and lock the milestone visit schedule for the year.</div></div>
+    <div class="tl-row"><div class="tl-when">Each milestone</div><div class="tl-what">A capture visit with ground and drone coverage, then a milestone film and social cuts within two weeks.</div></div>
+    <div class="tl-row"><div class="tl-when">Quarterly</div><div class="tl-what">A progress film that pulls the story forward, ready for partner and investor updates.</div></div>
+    <div class="tl-row"><div class="tl-when">End of year</div><div class="tl-what">A signature Eastpoint film, plus the full photography and footage library delivered to you.</div></div>
+    <div class="tl-row flag"><div class="tl-when">Year over year</div><div class="tl-what">The program continues through the build, so the finished community arrives with its whole story already told.</div></div>
+  </div>
+</section>
+
+<section class="section dark" id="work">
+  <div class="reveal">
+    <div class="eyebrow">05 &nbsp;/&nbsp; Our Work</div>
+    <h2>Press play.</h2>
+    <p class="lead">The kickoff we captured for you, alongside our ongoing work in the same development and affordable housing space.</p>
+  </div>
+  <div class="featured reveal">
+    <div class="lite feat" data-vid="1200589894" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200589894.jpg')">
+      <div class="ov"><span class="cat">Your Project</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">Eastpoint Neighborhood Kickoff</span></div>
+    </div>
+    <div class="lite feat" data-vid="1200612007" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200612007.jpg')">
+      <div class="ov"><span class="cat">Development Storytelling</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">Holladay Ventures</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper" id="invest">
+  <div class="reveal">
+    <div class="eyebrow">06 &nbsp;/&nbsp; Investment</div>
+    <h2>Three ways to scope year one.</h2>
+    <p class="lead">Every tier documents Eastpoint across the year and delivers a library you own. The middle tier is our recommendation for the strongest story per dollar. Coverage of standalone events sits in its own section below.</p>
+  </div>
+  <div class="tiers">
+    <div class="tier reveal">
+      <div class="tn">Foundation</div>
+      <div class="tp">$16,000</div>
+      <div class="tc">Year one, billed quarterly</div>
+      <ul>
+        <li>Four milestone capture visits across the year</li>
+        <li>Ground and drone coverage each visit</li>
+        <li>Four milestone films, about two minutes each</li>
+        <li>Four vertical social cuts</li>
+        <li>Photography set from each visit</li>
+        <li>Two revision rounds per film</li>
+      </ul>
+    </div>
+    <div class="tier rec reveal">
+      <div class="tn">Signature</div>
+      <div class="tp">$24,000</div>
+      <div class="tc">Year one, billed quarterly</div>
+      <ul>
+        <li>Six to eight milestone capture visits across the build year</li>
+        <li>Ground and drone coverage each visit</li>
+        <li>Quarterly progress films plus one signature Eastpoint film</li>
+        <li>A property and community tour film</li>
+        <li>Twelve vertical social cuts</li>
+        <li>Photography library from every visit</li>
+        <li>Two revision rounds per film</li>
+      </ul>
+    </div>
+    <div class="tier reveal">
+      <div class="tn">Premier</div>
+      <div class="tp">$38,000</div>
+      <div class="tc">Year one, billed quarterly</div>
+      <ul>
+        <li>Monthly capture cadence, up to twelve visits</li>
+        <li>Ground and drone coverage each visit</li>
+        <li>Quarterly progress films plus a cinematic signature film</li>
+        <li>An interview series on the partners, team, and community impact</li>
+        <li>Property and unit tour films</li>
+        <li>Monthly social packages and a full photography library</li>
+        <li>Priority turnaround and three revision rounds per film</li>
+      </ul>
+    </div>
+  </div>
+  <p class="invest-note">All figures in USD. Travel and licensing billed at cost. Pricing valid through July 11, 2026.</p>
+</section>
+
+<section class="section dark" id="events">
+  <div class="reveal">
+    <div class="eyebrow">07 &nbsp;/&nbsp; Optional &nbsp;/&nbsp; Standalone Events</div>
+    <h2>Groundbreakings and ribbon cuttings, covered in full.</h2>
+    <p class="lead">The program documents the build. The big event days, a groundbreaking, a grand opening, a ribbon cutting, a community celebration, are their own production with their own crew and plan. We keep them separate on purpose. When one is on the calendar, send us the details and we will build that as its own proposal.</p>
+  </div>
+  <div class="cer-wrap">
+    <div class="cer-proof reveal">
+      <p style="opacity:.92">From live event direction and multiple cameras to drone and a same week recap, we produce event days end to end. The Eastpoint kickoff was the first one. Each future milestone celebration can get the same treatment, sized to the day.</p>
+    </div>
+    <div class="cer-card reveal">
+      <div class="from">Event Coverage</div>
+      <div class="pn">Everything we can bring to a milestone event day, scoped to the moment.</div>
+      <ul class="cer-list">
+        <li>Multi camera coverage and a director on site</li>
+        <li>Ground and drone capture across the day</li>
+        <li>Event photography</li>
+        <li>A full recap film delivered the same week</li>
+        <li>Social recap set for post event reach</li>
+        <li>Footage archived into your Eastpoint library</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="reveal">
+    <div class="eyebrow">08 &nbsp;/&nbsp; About</div>
+    <h2>Nashville based. Broadcast disciplined.</h2>
+    <p class="lead">Walton Creative Group is a Nashville based creative production and strategy company, partnering here with Laws of Ace Films, who captured your kickoff. Our roots are in broadcast, with editorial credits across Fox Soul, PeachTree TV, and APEX, and we bring that discipline to development storytelling for clients like Holladay Ventures.</p>
+    <div class="brand-logos">
+      <span>Holladay Ventures</span><span>Amazon</span><span>United Way</span><span>Fox Soul</span><span>R.H. Boyd</span>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat reveal"><div class="n">Multi year</div><div class="l">Development storytelling</div></div>
+    <div class="stat reveal"><div class="n">Ground + air</div><div class="l">Drone capable on every visit</div></div>
+    <div class="stat reveal"><div class="n">Library</div><div class="l">You own every asset</div></div>
+  </div>
+</section>
+
+<section class="section paper">
+  <div class="reveal">
+    <div class="eyebrow">09 &nbsp;/&nbsp; The Details</div>
+    <h2>Clean and simple.</h2>
+  </div>
+  <div class="terms">
+    <div class="reveal">
+      <h4>What Is Included</h4>
+      <ul>
+        <li>A planned milestone calendar built with your team, so visits line up with the build.</li>
+        <li>Two revision rounds per film. Additional rounds billed at standard hourly rate.</li>
+        <li>Final delivery in your specified formats. You own the delivered films, footage, and photography library.</li>
+        <li>WCG and Laws of Ace may use the work in portfolio and marketing with your approval.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section dark cta" id="next">
+  <div class="reveal">
+    <div class="eyebrow" style="text-align:center">10 &nbsp;/&nbsp; Next Steps</div>
+    <p class="big">One project. Years of story.<br>Let us document the whole climb.</p>
+    <div class="cta-btns">
+      <a href="mailto:aaron@waltoncreativegroup.com?subject=Eastpoint%20Documentation%20Program" class="btn btn-solid">Start the Conversation</a>
+      <a href="https://calendly.com/waltoncreativegroup/available" target="_blank" rel="noopener" class="btn btn-ghost">Book a 15 Minute Call</a>
+    </div>
+    <div class="contact">
+      Aaron Walton, Walton Creative Group &nbsp;|&nbsp; Bryan Williams, Laws of Ace Films<br>
+      <a href="mailto:aaron@waltoncreativegroup.com">aaron@waltoncreativegroup.com</a> &nbsp;/&nbsp; 615 417 4740<br>
+      <a href="https://waltoncreativegroup.com">waltoncreativegroup.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-brand">
+    <img src="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png" alt="WCG">
+    <div><b>Walton Creative Group</b><p>with Laws of Ace Films</p></div>
+  </div>
+  <div class="foot-meta">Proposal for The Fallon Company<br>Eastpoint Documentation Program &nbsp;/&nbsp; June 2026</div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('shrink',scrollY>40);});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function playVid(el){
+  if(el.classList.contains('playing'))return;
+  var id=el.dataset.vid;
+  el.innerHTML='<iframe src="https://player.vimeo.com/video/'+id+'?autoplay=1&color=695684&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+  el.classList.add('playing');
+}
+</script>
+</body>
+</html>
