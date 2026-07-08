@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walton Creative Group · Press Pause Sample Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple-dark:#695684;
+    --purple-mid:#7E679B;
+    --purple-light:#B8A3CE;
+    --ink:#2b2733;
+    --muted:#7d7690;
+    --paper:#ffffff;
+    --wash:#f6f3fa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+    color:var(--ink);
+    background:var(--wash);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  header{
+    background:var(--purple-dark);
+    color:#fff;
+    padding:44px 0 40px;
+  }
+  .brand{
+    font-family:'Space Mono',monospace;
+    font-weight:700;
+    font-size:22px;
+    letter-spacing:1px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .brand .mark{
+    display:inline-block;width:14px;height:14px;border-radius:50%;
+    background:var(--purple-light);
+  }
+  .tag{
+    margin-top:6px;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--purple-light);
+  }
+  .lede{
+    margin-top:26px;max-width:640px;
+  }
+  .lede h1{
+    font-size:26px;font-weight:600;line-height:1.3;margin-bottom:10px;
+  }
+  .lede p{color:#e9e2f3;font-size:15px;}
+  section.block{padding:40px 0 8px;}
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--purple-mid);font-weight:700;margin-bottom:4px;
+  }
+  .block h2{font-size:19px;font-weight:600;margin-bottom:20px;color:var(--ink);}
+  .grid{display:grid;gap:22px;}
+  .grid.long{grid-template-columns:repeat(2,1fr);}
+  .grid.social{grid-template-columns:repeat(3,1fr);}
+  .card{
+    background:var(--paper);
+    border:1px solid #ece7f2;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(105,86,132,.06);
+  }
+  .frame{position:relative;width:100%;background:#000;}
+  .frame.wide{padding-bottom:56.25%;}
+  .frame.tall{padding-bottom:177.7%;}
+  .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .meta{padding:14px 16px;}
+  .meta .name{font-weight:600;font-size:15px;}
+  .meta .sub{color:var(--muted);font-size:13px;margin-top:2px;}
+  footer{
+    margin-top:48px;background:#fff;border-top:2px solid var(--purple-light);
+    padding:34px 0 46px;
+  }
+  .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+  .foot-name{font-weight:600;color:var(--purple-dark);font-size:16px;}
+  .foot-name span{display:block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:3px;}
+  .foot-contact{font-size:13px;color:var(--muted);line-height:1.8;}
+  .foot-contact a{color:var(--purple-dark);text-decoration:none;}
+  .btn{
+    display:inline-block;background:var(--purple-dark);color:#fff;text-decoration:none;
+    font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+    padding:12px 24px;border-radius:3px;
+  }
+  @media(max-width:760px){
+    .grid.long,.grid.social{grid-template-columns:1fr;}
+    .lede h1{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="mark"></span>WALTON CREATIVE GROUP</div>
+    <div class="tag">Curating Impact Driven Content</div>
+    <div class="lede">
+      <div class="tag" style="margin-bottom:14px;">For the Press Pause book promo</div>
+      <h1>Sample work for Karynthia Glasper Phillips</h1>
+      <p>A short set of recent pieces showing the range and finish level Walton Creative Group would bring to the Press Pause trailer. Prepared for Karynthia and her team at InterVarsity Press, and ready to share.</p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="block">
+    <div class="eyebrow">Long form</div>
+    <h2>Feature and standard cuts</h2>
+    <div class="grid long">
+      <div class="card">
+        <div class="frame wide"><iframe src="https://player.vimeo.com/video/1208176200" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Long form feature"></iframe></div>
+        <div class="meta"><div class="name">Long form feature</div><div class="sub">2:14 · widescreen</div></div>
+      </div>
+      <div class="card">
+        <div class="frame wide"><iframe src="https://player.vimeo.com/video/1208176164" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Standard cut"></iframe></div>
+        <div class="meta"><div class="name">Standard cut</div><div class="sub">1:15 · widescreen</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow">Social</div>
+    <h2>Vertical cuts</h2>
+    <div class="grid social">
+      <div class="card">
+        <div class="frame tall"><iframe src="https://player.vimeo.com/video/1208176166" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Social cut 1"></iframe></div>
+        <div class="meta"><div class="name">Social cut 1</div><div class="sub">0:30 · vertical</div></div>
+      </div>
+      <div class="card">
+        <div class="frame tall"><iframe src="https://player.vimeo.com/video/1208176167" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Social cut 2"></iframe></div>
+        <div class="meta"><div class="name">Social cut 2</div><div class="sub">0:26 · vertical</div></div>
+      </div>
+      <div class="card">
+        <div class="frame tall"><iframe src="https://player.vimeo.com/video/1208176165" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Social cut 3"></iframe></div>
+        <div class="meta"><div class="name">Social cut 3</div><div class="sub">1:19 · vertical</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Aaron Walton<span>Founder &amp; Creative Director</span></div>
+      <div class="foot-contact">
+        <a href="mailto:aaron@waltoncreativegroup.com">aaron@waltoncreativegroup.com</a> · 615-417-4740<br>
+        315 Deaderick St, Ste 1550, Nashville, TN 37238
+      </div>
+    </div>
+    <a class="btn" href="https://calendly.com/waltoncreativegroup/available">Book a call</a>
+  </div>
+</footer>
+</body>
+</html>
