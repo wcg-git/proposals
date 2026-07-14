@@ -1,1 +1,715 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Build Beyond the Build | Walton Creative Group x Turner Construction</title>
+<meta property="og:title" content="The Build Beyond the Build | Walton Creative Group">
+<meta property="og:description" content="A proposal for Turner Construction. Telling the community impact story of the new Titans stadium.">
+<meta property="og:image" content="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..500&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{
+    font-family:'Integral CF';font-weight:500;font-display:swap;
+    src:url('https://waltoncreativegroup.com/wp-content/uploads/2023/05/IntegralCF-Medium.woff2') format('woff2'),
+        url('https://waltoncreativegroup.com/wp-content/uploads/2023/05/IntegralCF-Medium.woff') format('woff');
+  }
+  :root{
+    --ink:#161020;--purple:#695684;--mid:#7E679B;--light:#B8A3CE;--paper:#faf7f2;
+    --serif:'DM Serif Display',Georgia,serif;
+    --sans:'DM Sans',-apple-system,sans-serif;
+    --mono:'SF Mono','IBM Plex Mono',Menlo,monospace;
+    --display:'Integral CF','DM Sans',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);color:#111;background:var(--paper);line-height:1.7;font-size:17px;overflow-x:hidden;}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);}
+  .narrow{max-width:860px;}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--purple);margin-bottom:1.4rem;}
+  .dark .eyebrow{color:var(--light);}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.05;color:#111;}
+  h1 em,h2 em{font-style:italic;color:var(--purple);}
+  .dark h1 em,.dark h2 em{color:var(--light);}
+  h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.12;color:#111;margin-bottom:1.2rem;}
+  .dark h2{color:var(--paper);}
+  .lede{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#3c3646;max-width:62ch;}
+  .dark .lede{color:rgba(250,247,242,.82);}
+  section{padding:clamp(4rem,9vw,7.5rem) 0;}
+  .dark{background:var(--ink);color:var(--paper);}
+
+  .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--light),var(--purple));z-index:99;width:0;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(22,16,32,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,163,206,.14);}
+  nav .wrap{display:flex;align-items:center;gap:1rem;height:68px;}
+  nav img{width:38px;height:38px;border-radius:50%;}
+  nav .brand{font-family:var(--mono);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper);text-decoration:none;}
+  nav .links{margin-left:auto;display:flex;gap:1.8rem;align-items:center;}
+  nav .links a{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,247,242,.72);text-decoration:none;}
+  nav .links a:hover{color:var(--light);}
+  nav .links a.navcta{background:var(--paper);color:var(--ink);padding:.62rem 1.2rem;border-radius:3px;font-weight:600;}
+  nav .links a.navcta:hover{background:var(--light);}
+  @media(max-width:820px){nav .links a:not(.navcta){display:none;}}
+
+  .hero{padding:clamp(9rem,16vw,12rem) 0 clamp(4rem,8vw,6.5rem);background:var(--paper);}
+  .hero .kicker{font-family:var(--display);font-size:clamp(.8rem,1.4vw,.95rem);letter-spacing:.22em;text-transform:uppercase;color:var(--mid);margin-bottom:1.6rem;}
+  .hero p.lede{margin-top:1.8rem;}
+  .ctarow{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.6rem;align-items:center;}
+  .btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:1.05rem 1.9rem;border-radius:3px;transition:all .2s;}
+  .btn.solid{background:var(--ink);color:var(--paper);}
+  .btn.solid:hover{background:var(--purple);}
+  .btn.ghost{border:1px solid rgba(22,16,32,.32);color:var(--ink);}
+  .btn.ghost:hover{border-color:var(--purple);color:var(--purple);}
+  .btn.paperbtn{background:var(--paper);color:var(--ink);}
+  .btn.paperbtn:hover{background:var(--light);}
+  .btn.ghostlight{border:1px solid rgba(184,163,206,.5);color:var(--paper);}
+  .btn.ghostlight:hover{border-color:var(--light);color:var(--light);}
+  .trustline{margin-top:3.4rem;padding-top:1.6rem;border-top:1px solid rgba(22,16,32,.12);font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7a7286;display:flex;gap:2.4rem;flex-wrap:wrap;}
+  .trustline b{color:#111;font-weight:600;display:block;font-size:.78rem;margin-top:.3rem;}
+
+  .statband{padding:clamp(2.8rem,5vw,4rem) 0;}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;}
+  .stat .num{font-family:var(--serif);font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.1;color:var(--light);}
+  .stat .lbl{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,247,242,.6);margin-top:.5rem;}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;margin-top:2.6rem;}
+  .card{background:#fff;border:1px solid rgba(105,86,132,.16);border-radius:8px;padding:1.8rem;display:flex;flex-direction:column;gap:.7rem;color:#111;border-top:3px solid var(--purple);}
+  .card .tag{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);}
+  .card h4{font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.2;}
+  .card p{font-size:.92rem;color:#544d61;flex:1;}
+
+  .steps{margin-top:3rem;display:grid;gap:0;}
+  .step{display:grid;grid-template-columns:90px 1fr;gap:1.6rem;padding:2.2rem 0;border-top:1px solid rgba(22,16,32,.12);}
+  .step:last-child{border-bottom:1px solid rgba(22,16,32,.12);}
+  .step .n{font-family:var(--serif);font-size:2.2rem;color:var(--light);line-height:1;}
+  .step h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin-bottom:.5rem;}
+  .step p{color:#544d61;max-width:62ch;}
+  @media(max-width:640px){.step{grid-template-columns:1fr;gap:.6rem;}}
+
+  .proc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:2.8rem;}
+  .proc .p{border-top:2px solid var(--purple);padding-top:1.2rem;}
+  .proc .p .n{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;color:var(--mid);}
+  .proc .p h4{font-family:var(--serif);font-weight:400;font-size:1.25rem;margin:.5rem 0;}
+  .proc .p p{font-size:.9rem;color:#544d61;}
+
+  /* story architecture */
+  .arch{margin-top:3rem;display:grid;justify-items:center;}
+  .arch-core{background:var(--ink);color:var(--paper);border-radius:8px;padding:2.2rem 2.6rem;text-align:center;max-width:600px;width:100%;position:relative;z-index:2;border-bottom:3px solid var(--purple);}
+  .arch-core .k{font-family:var(--mono);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--light);margin-bottom:.6rem;}
+  .arch-core h3{font-family:var(--serif);font-weight:400;font-size:1.7rem;line-height:1.15;}
+  .arch-core p{font-size:.92rem;color:rgba(250,247,242,.78);margin-top:.7rem;}
+  .arch-stem{width:1px;height:44px;background:var(--purple);}
+  .arch-branches{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;width:100%;position:relative;padding-top:22px;}
+  .arch-branches::before{content:'';position:absolute;top:0;left:12.5%;right:12.5%;height:1px;background:var(--purple);}
+  .arch-branch{background:#fff;border:1px solid rgba(105,86,132,.16);border-top:2px solid var(--purple);border-radius:8px;padding:1.4rem 1.2rem;text-align:center;position:relative;}
+  .arch-branch::before{content:'';position:absolute;top:-22px;left:50%;width:1px;height:22px;background:var(--purple);}
+  .arch-branch .k{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:.4rem;}
+  .arch-branch h4{font-family:var(--serif);font-weight:400;font-size:1.15rem;color:#111;}
+  .arch-branch p{font-size:.82rem;color:#544d61;margin-top:.4rem;}
+  @media(max-width:820px){.arch-branches{grid-template-columns:1fr 1fr;}.arch-branches::before{left:25%;right:25%;}}
+
+  /* timeline */
+  .tl{margin-top:3rem;}
+  .tl-row{display:grid;grid-template-columns:230px 1fr;gap:2rem;padding:1.6rem 0;border-top:1px solid rgba(22,16,32,.12);}
+  .tl-row:last-child{border-bottom:1px solid rgba(22,16,32,.12);}
+  .tl-when{font-family:var(--mono);font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);padding-top:.25rem;}
+  .tl-what{color:#3c3646;max-width:68ch;}
+  .tl-row.flag{background:linear-gradient(90deg,rgba(105,86,132,.06),transparent 70%);}
+  .tl-row.flag .tl-when{color:var(--ink);}
+  .tl-row.flag .tl-when::before{content:"★ ";color:var(--purple);}
+  @media(max-width:640px){.tl-row{grid-template-columns:1fr;gap:.4rem;}}
+
+  /* impact stats */
+  .impact{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem 2rem;margin-top:3rem;}
+  @media(max-width:820px){.impact{grid-template-columns:1fr 1fr;}}
+  .istat{border-left:2px solid var(--purple);padding-left:1.3rem;}
+  .istat .num{font-family:var(--serif);font-size:clamp(2rem,3.6vw,3rem);line-height:1.1;color:var(--light);}
+  .istat .num .pre{font-size:.55em;color:rgba(250,247,242,.55);}
+  .istat .lbl{font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(250,247,242,.6);margin-top:.55rem;line-height:1.7;}
+  .stat-note{margin-top:2.6rem;font-size:.85rem;color:rgba(250,247,242,.5);font-style:italic;max-width:70ch;}
+
+  /* film slate header */
+  .slate{background:#0e0a18;color:var(--paper);padding:1.1rem 1.6rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;border-radius:8px 8px 0 0;border:1px solid rgba(184,163,206,.16);border-bottom:0;margin-top:3rem;}
+  .slate .rec{width:9px;height:9px;border-radius:50%;background:#e0524d;box-shadow:0 0 0 3px rgba(224,82,77,.25);animation:pulse 1.6s infinite;flex-shrink:0;}
+  @keyframes pulse{50%{opacity:.4;}}
+  .slate span{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(250,247,242,.75);}
+  .slate span b{color:var(--paper);font-weight:600;}
+  .screen{background:rgba(250,247,242,.04);border:1px solid rgba(184,163,206,.16);border-top:0;border-radius:0 0 8px 8px;padding:clamp(1.4rem,3vw,2.4rem);}
+
+  /* portfolio tiles */
+  .featured{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;}
+  @media(max-width:820px){.featured{grid-template-columns:1fr;}}
+  .reel{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:1.4rem;}
+  .lite{position:relative;border-radius:8px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center;background-color:#241b36;transition:transform .3s,box-shadow .3s;}
+  .lite::after{content:'';display:block;padding-top:56.25%;}
+  .lite:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.45);}
+  .lite .ov{position:absolute;inset:0;padding:1.2rem 1.3rem;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(to top,rgba(14,10,24,.92),rgba(14,10,24,.12) 55%,rgba(14,10,24,.55));}
+  .lite .cat{font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,247,242,.8);}
+  .lite .nm{font-family:var(--serif);font-weight:400;font-size:1.2rem;color:var(--paper);line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+  .feat .nm{font-size:1.5rem;}
+  .lite .nm small{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--light);margin-top:.4rem;text-shadow:none;}
+  .lite .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:var(--purple);border:2px solid rgba(250,247,242,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .25s,background .25s;}
+  .lite:hover .play{transform:translate(-50%,-50%) scale(1.08);background:var(--mid);}
+  .lite .play svg{width:22px;height:22px;fill:var(--paper);margin-left:3px;}
+  .lite.playing{cursor:default;transform:none;}
+  .lite.playing .ov{display:none;}
+  .lite.playing iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+
+  /* tiers */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem;align-items:stretch;}
+  @media(max-width:900px){.tiers{grid-template-columns:1fr;max-width:460px;margin-inline:auto;}}
+  .tier{background:#fff;border:1px solid rgba(105,86,132,.16);border-radius:8px;padding:2.2rem 1.9rem;display:flex;flex-direction:column;color:#111;transition:transform .25s,box-shadow .25s;}
+  .tier:hover{transform:translateY(-5px);box-shadow:0 22px 55px rgba(22,16,32,.12);}
+  .tier.rec{background:var(--ink);color:var(--paper);position:relative;border:1px solid rgba(184,163,206,.3);box-shadow:0 26px 65px rgba(22,16,32,.28);}
+  .tier.rec::before{content:'RECOMMENDED';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--purple);color:var(--paper);font-family:var(--mono);font-size:.58rem;font-weight:600;letter-spacing:.22em;padding:.4rem 1.1rem;border-radius:20px;white-space:nowrap;}
+  .tier .tname{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);margin-bottom:.9rem;}
+  .tier.rec .tname{color:var(--light);}
+  .tier .tprice{font-family:var(--serif);font-weight:400;font-size:2.6rem;line-height:1;color:#111;}
+  .tier.rec .tprice{color:var(--paper);}
+  .tier .tcap{font-size:.8rem;font-style:italic;color:#7a7286;margin:.5rem 0 1.5rem;}
+  .tier.rec .tcap{color:rgba(250,247,242,.6);}
+  .tier ul{list-style:none;flex:1;display:grid;gap:.65rem;align-content:start;}
+  .tier li{padding-left:1.5rem;position:relative;font-size:.9rem;line-height:1.55;color:#3c3646;}
+  .tier.rec li{color:rgba(250,247,242,.86);}
+  .tier li::before{content:"→";position:absolute;left:0;color:var(--purple);font-family:var(--mono);}
+  .tier.rec li::before{color:var(--light);}
+  .invest-note{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#7a7286;text-align:center;}
+
+  /* events */
+  .inc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;margin-top:2.8rem;align-items:center;}
+  @media(max-width:820px){.inc-grid{grid-template-columns:1fr;}}
+  .inc{background:rgba(250,247,242,.05);border:1px solid rgba(184,163,206,.22);border-radius:8px;padding:2rem;}
+  .inc .tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:1rem;display:block;}
+  .inc h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--paper);margin-bottom:1rem;}
+  .inc ul{list-style:none;display:grid;gap:.75rem;}
+  .inc li{padding-left:1.6rem;position:relative;color:rgba(250,247,242,.85);font-size:.95rem;}
+  .inc li::before{content:"→";position:absolute;left:0;color:var(--light);font-family:var(--mono);}
+  .evcopy{color:rgba(250,247,242,.82);font-size:1.02rem;max-width:56ch;}
+
+  /* details */
+  .details-list{list-style:none;margin-top:2.4rem;max-width:860px;}
+  .details-list li{padding:1.1rem 0 1.1rem 2rem;position:relative;border-top:1px solid rgba(22,16,32,.12);color:#3c3646;font-size:.97rem;}
+  .details-list li:last-child{border-bottom:1px solid rgba(22,16,32,.12);}
+  .details-list li::before{content:"→";position:absolute;left:0;color:var(--purple);font-family:var(--mono);}
+
+  /* cta */
+  .cta{text-align:center;}
+  .cta h2{margin-inline:auto;max-width:22ch;}
+  .cta .ctarow{justify-content:center;}
+  .contact{margin-top:2.6rem;font-size:.98rem;color:rgba(250,247,242,.82);line-height:1.9;}
+  .contact a{color:var(--light);text-decoration:none;}
+
+  footer{background:#0e0a18;color:rgba(250,247,242,.66);padding:3rem 0;font-size:.85rem;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center;}
+  footer a{color:var(--light);text-decoration:none;}
+  .mono{font-family:var(--mono);}
+
+  /* ledger */
+  .ledger-wrap{margin-top:3rem;overflow-x:auto;background:#fff;border:1px solid rgba(105,86,132,.16);border-radius:8px;box-shadow:0 24px 60px rgba(22,16,32,.07);}
+  table.ledger{width:100%;border-collapse:collapse;min-width:760px;}
+  .ledger th,.ledger td{padding:.9rem 1.2rem;text-align:center;font-size:.9rem;border-top:1px solid rgba(105,86,132,.1);}
+  .ledger th:first-child,.ledger td:first-child{text-align:left;}
+  .ledger thead th{border-top:0;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:1.1rem 1.2rem;}
+  .ledger thead th small{display:block;font-family:var(--serif);font-size:1.15rem;letter-spacing:0;text-transform:none;font-weight:400;margin-top:.25rem;color:var(--light);}
+  .ledger td.item{color:#3c3646;max-width:34ch;}
+  .ledger td.v{font-family:var(--mono);font-size:.8rem;color:#111;}
+  .ledger td.v .yes{color:var(--purple);font-weight:700;}
+  .ledger td.v .no{color:#c9c2d4;}
+  .ledger td.rec-col{background:rgba(105,86,132,.07);}
+  .ledger th.rec-col{background:var(--purple);}
+  .ledger tr.group td{background:var(--paper);font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--purple);text-align:left;padding:.9rem 1.2rem .5rem;border-top:1px solid rgba(105,86,132,.18);}
+  .ledger tr.total td{background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:1.1rem 1.2rem;}
+  .ledger tr.total td .big{font-family:var(--serif);font-size:1.35rem;text-transform:none;letter-spacing:0;color:var(--light);}
+  .ledger tr.total td.rec-col{background:#241b36;}
+  .value-note{margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+  @media(max-width:820px){.value-note{grid-template-columns:1fr;}}
+  .vcell{border-top:2px solid var(--purple);padding-top:1rem;}
+  .vcell .vn{font-family:var(--serif);font-size:1.6rem;color:#111;line-height:1.2;}
+  .vcell .vl{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#7a7286;margin-top:.4rem;}
+
+  /* storyboard */
+  .board{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem;}
+  @media(max-width:900px){.board{grid-template-columns:1fr 1fr;}}
+  @media(max-width:620px){.board{grid-template-columns:1fr;}}
+  .frame{background:var(--paper);border-radius:6px;padding:.9rem .9rem 1.2rem;box-shadow:0 18px 45px rgba(0,0,0,.4);transition:transform .3s;}
+  .frame:nth-child(odd){transform:rotate(-.6deg);}
+  .frame:nth-child(even){transform:rotate(.5deg);}
+  .frame:hover{transform:rotate(0) translateY(-6px);}
+  .frame img{width:100%;border-radius:3px;display:block;}
+  .frame .fhead{display:flex;justify-content:space-between;align-items:baseline;margin:.8rem .2rem .35rem;}
+  .frame .fnum{font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.18em;color:var(--purple);}
+  .frame .ftype{font-family:var(--mono);font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:#9a92a8;}
+  .frame .fdesc{font-size:.84rem;color:#3c3646;line-height:1.5;margin:0 .2rem;}
+  .frame .fvo{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--purple);margin:.55rem .2rem 0;line-height:1.4;}
+  .board-note{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(250,247,242,.5);}
+
+  .wr{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+  .wr.in{opacity:1;transform:none;}
+
+  @media print{nav,.progress{display:none;}section{padding:2.5rem 0;}.hero{padding:3rem 0;}}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav>
+  <div class="wrap">
+    <img src="https://waltoncreativegroup.com/wp-content/uploads/2024/09/cropped-WCG-CircleSML-270x270.png" alt="Walton Creative Group">
+    <a class="brand" href="https://waltoncreativegroup.com">Walton Creative Group</a>
+    <div class="links">
+      <a href="#project">The Opportunity</a>
+      <a href="#story">The Story</a>
+      <a href="#work">Our Work</a>
+      <a href="#invest">Investment</a>
+      <a class="navcta" href="#next">Start the Conversation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker wr">Walton Creative Group &nbsp;x&nbsp; Turner Construction</div>
+    <h1 class="wr">The build beyond <em>the build.</em></h1>
+    <p class="lede wr">A proposal to tell the community impact story of the new Titans stadium. The careers launched, the businesses lifted, and the neighborhoods brought inside the fence. Ready for the screen before the ribbon is cut.</p>
+    <div class="ctarow wr">
+      <a class="btn solid" href="#invest">Three ways to tell it</a>
+      <a class="btn ghost" href="#work">Press play on our work</a>
+    </div>
+    <div class="trustline wr">
+      <span>Prepared for<b>Herbert Brown &amp; Tony Williams</b></span>
+      <span>Launch window<b>Late February 2027</b></span>
+      <span>Date<b>July 14, 2026</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- STATBAND -->
+<div class="dark statband">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat wr"><div class="num">3 stories</div><div class="lbl">People · Business · Community</div></div>
+      <div class="stat wr"><div class="num">3 windows</div><div class="lbl">That will not come back</div></div>
+      <div class="stat wr"><div class="num">1 film</div><div class="lbl">That plays before every speech</div></div>
+      <div class="stat wr"><div class="num">Feb 2027</div><div class="lbl">Finished before the ribbon</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- THE OPPORTUNITY -->
+<section id="project">
+  <div class="wrap narrow">
+    <div class="eyebrow wr">01 · The Opportunity</div>
+    <h2 class="wr">The stadium will speak for itself. The impact needs a <em>storyteller.</em></h2>
+    <p class="lede wr">Herbert, Tony, thank you for the conversation. It was clear within minutes that this project already has its story. It just has not been told on screen yet.</p>
+    <p class="lede wr" style="margin-top:1.2rem;">When the new stadium opens, every camera in the country will point at the building. What they will not see is what happened around it for three years. A training camp that turned neighbors into craft professionals. Small businesses that grew up inside a landmark project. Students who stood on the site and saw a future. That is the story Turner and the Titans get to own, and it deserves the same standard of production as the building itself.</p>
+    <p class="lede wr" style="margin-top:1.2rem;">Our goal is simple. When a Turner or Titans executive steps up to speak, the film that plays before them should do the heavy lifting. And anyone who finds these stories afterward should understand exactly what this project meant to Nashville.</p>
+  </div>
+  <div class="wrap">
+    <div class="cards">
+      <div class="card wr"><span class="tag">Pillar I · People</span><h4>The TC2 training camp</h4><p>Cohorts of Middle Tennessee residents trained across the trades and graduating into construction careers, with three cohorts still ahead of us to capture.</p></div>
+      <div class="card wr"><span class="tag">Pillar II · Business</span><h4>Small business assistance</h4><p>Nearly one hundred small, women owned, and minority owned firms carried real scopes on a landmark build. Their growth is the project's quietest headline.</p></div>
+      <div class="card wr"><span class="tag">Pillar III · Community</span><h4>Outreach across the region</h4><p>Students, universities, high schools, and neighborhood programs brought onto the site and into the industry through years of engagement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="dark" style="padding-top:clamp(3rem,6vw,5rem);">
+  <div class="wrap">
+    <div class="eyebrow wr">02 · Objectives</div>
+    <h2 class="wr">What we are setting out <em>to do.</em></h2>
+    <p class="lede wr">Pulled straight from our conversation. Here is what this work needs to accomplish.</p>
+    <div class="proc" style="margin-top:2.8rem;">
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">01</span><h4 style="color:var(--paper);">One lens, whole story</h4><p style="color:rgba(250,247,242,.72);">Tell the story of the project through community engagement, from the original strategy to the finished stadium.</p></div>
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">02</span><h4 style="color:var(--paper);">The executive film</h4><p style="color:rgba(250,247,242,.72);">A signature piece under ten minutes that plays before your people speak, with a tight two minute cut always ready.</p></div>
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">03</span><h4 style="color:var(--paper);">Catch what will not wait</h4><p style="color:rgba(250,247,242,.72);">Cohorts 13 through 15 in the trailers, the annual meeting week, and the all cohort graduation celebration.</p></div>
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">04</span><h4 style="color:var(--paper);">Weave the archive</h4><p style="color:rgba(250,247,242,.72);">Groundbreaking footage, early graduations, and past activations from the Titans and Turner libraries.</p></div>
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">05</span><h4 style="color:var(--paper);">Build it to branch</h4><p style="color:rgba(250,247,242,.72);">Graduates, business owners, and community partners each carry a deeper story worth its own film.</p></div>
+      <div class="p wr" style="border-top-color:var(--light);"><span class="n" style="color:var(--light);">06</span><h4 style="color:var(--paper);">Land the launch</h4><p style="color:rgba(250,247,242,.72);">Finished films ahead of the stadium turnover, ready the moment the ribbon is cut.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY ARCHITECTURE -->
+<section id="story">
+  <div class="wrap">
+    <div class="eyebrow wr">03 · The Story Architecture</div>
+    <h2 class="wr">One signature film. A catalog that goes <em>deeper.</em></h2>
+    <p class="lede wr">The signature film consolidates everything into the piece that plays in every room. The branch films let each voice go further, building a catalog that lives on Turner and Titans channels and expands the story for anyone who wants more. You choose how far to take it.</p>
+    <div class="arch wr">
+      <div class="arch-core">
+        <div class="k">The Centerpiece</div>
+        <h3>The Signature Film</h3>
+        <p>The full arc in under ten minutes. Strategy, people, business, community, and the stadium rising behind all of it. With a two minute executive cut for any stage.</p>
+      </div>
+      <div class="arch-stem"></div>
+      <div class="arch-branches">
+        <div class="arch-branch"><div class="k">Branch Series</div><h4>The Graduate</h4><p>A TC2 story from application to job offer.</p></div>
+        <div class="arch-branch"><div class="k">Branch Series</div><h4>The Business</h4><p>A firm that grew on this project.</p></div>
+        <div class="arch-branch"><div class="k">Branch Series</div><h4>The Community</h4><p>Students and neighborhoods on site.</p></div>
+        <div class="arch-branch"><div class="k">Branch Series</div><h4>The Employer</h4><p>The companies hiring TC2 graduates.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORYBOARD SAMPLE -->
+<section class="dark">
+  <div class="wrap">
+    <div class="eyebrow wr">04 · The Storyboard · A Sample</div>
+    <h2 class="wr">We build the film before we <em>roll a frame.</em></h2>
+    <p class="lede wr">You said it on the call. Map the story, the voices, and the pieces before anything is recorded. That is exactly how we work. Here is a sample board from the signature film's opening minute, sketched the way it will arrive in our story mapping session. Every film in the program gets this treatment, reviewed and approved by your team before a camera rolls.</p>
+    <div class="board">
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220213_7fe4bb0b-1d66-4985-b7d7-227feaa07b06_min.webp" alt="Storyboard frame 01, aerial of the river and stadium site at dawn">
+        <div class="fhead"><span class="fnum">FRAME 01</span><span class="ftype">Aerial · Dawn</span></div>
+        <p class="fdesc">High over the river bend. The city on one side, the site on the other, cranes against the sunrise.</p>
+        <p class="fvo">"Before the steel, there was a promise."</p>
+      </div>
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220229_64455395-0a97-4c0b-9b64-26689804218b_min.webp" alt="Storyboard frame 02, archival groundbreaking ceremony">
+        <div class="fhead"><span class="fnum">FRAME 02</span><span class="ftype">Archival · 2024</span></div>
+        <p class="fdesc">The groundbreaking, pulled from the Titans library. Shovels turn the first dirt as cameras flash.</p>
+        <p class="fvo">"It was never only about a building."</p>
+      </div>
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220233_ad9eb317-31b6-4da6-8889-bc65e0575008_min.webp" alt="Storyboard frame 03, inside the TC2 training trailer">
+        <div class="fhead"><span class="fnum">FRAME 03</span><span class="ftype">Verite · TC2 Trailer</span></div>
+        <p class="fdesc">Inside the trailers with cohort 13. Sound up: an instructor, a lesson, hands learning a trade.</p>
+        <p class="fvo">Natural sound carries the scene.</p>
+      </div>
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220235_9feb4a06-45bf-4bc6-ae63-b10b9e556dce_min.webp" alt="Storyboard frame 04, graduate interview setup">
+        <div class="fhead"><span class="fnum">FRAME 04</span><span class="ftype">Interview · Key Light</span></div>
+        <p class="fdesc">A graduate tells it in her own words. The build rises through the window behind her.</p>
+        <p class="fvo">"I walked in with nothing but a work ethic."</p>
+      </div>
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220238_aa60febf-ca75-442f-b1fe-8a84fc6d0917_min.webp" alt="Storyboard frame 05, small business owner walking the concourse">
+        <div class="fhead"><span class="fnum">FRAME 05</span><span class="ftype">Tracking · Low Angle</span></div>
+        <p class="fdesc">A business owner walks a scope her firm won, crew behind her, blueprints open in her hands.</p>
+        <p class="fvo">"Nearly one hundred businesses grew here."</p>
+      </div>
+      <div class="frame wr">
+        <img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_36Fi0f1icZYIJPcYFk8uNLKoVJY/hf_20260714_220240_43532ed4-ff28-4695-8926-c57bb17d1651_min.webp" alt="Storyboard frame 06, finished stadium at dusk with open sky for the title">
+        <div class="fhead"><span class="fnum">FRAME 06</span><span class="ftype">Wide · Dusk</span></div>
+        <p class="fdesc">Opening night. Crowds stream toward the gates, and the title lands in the open sky.</p>
+        <p class="fvo">The Build Beyond the Build.</p>
+      </div>
+    </div>
+    <p class="board-note wr">Sample frames for illustration · The full board is built with your team and the Titans in the story mapping session, then locked before production</p>
+  </div>
+</section>
+
+<!-- WHAT WE DELIVER -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow wr">05 · What We Deliver</div>
+    <h2 class="wr">The work, in <em>concrete terms.</em></h2>
+    <p class="lede wr">Four phases take this from ideation to launch.</p>
+    <div class="steps">
+      <div class="step wr"><div class="n">01</div><div><h3>Story mapping and pre production</h3><p>We sit down with your team, and with Johari and the Titans at the right moment, to map the story before anything is recorded. Who speaks, what each voice carries, and how the pieces fit. Tony's interview list becomes a locked roster, and we request archival footage from the Titans library so the edit starts with the full history in hand.</p></div></div>
+      <div class="step wr"><div class="n">02</div><div><h3>Interview and site production</h3><p>Multi camera interview setups with cinema lighting and broadcast grade audio, in the spaces Turner designates on site or in conference settings. We build the annual meeting week into a concentrated interview block while the national community team is in Nashville, and we capture cohorts 13 through 15 in the trailers while the trailers are still there.</p></div></div>
+      <div class="step wr"><div class="n">03</div><div><h3>Edit, archive weave, and story shaping</h3><p>Every film gets its own arc. New interviews are woven with archival groundbreaking and graduation footage so the story spans the full life of the project. Color grade, audio mix, and clean titles in a look that respects both the Turner and Titans brands. Your team reviews online and we refine through revision rounds.</p></div></div>
+      <div class="step wr"><div class="n">04</div><div><h3>Delivery for every screen and stage</h3><p>Masters arrive ready for the premiere screen, the boardroom, the website, and social channels. Files come through a shared folder with clear naming, organized as a catalog your teams can pull from for years. We archive the masters for twelve months after delivery.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow wr">06 · Timeline</div>
+    <h2 class="wr">The calendar is <em>the strategy.</em></h2>
+    <p class="lede wr">Three windows will not come back. The annual meeting week, the trailers on site, and the final graduation. We plan around them and the rest falls into place, with the finished films in hand well before the stadium opens.</p>
+    <div class="tl wr">
+      <div class="tl-row"><div class="tl-when">Late July</div><div class="tl-what">Story mapping session with Herbert and Tony. Interview roster locked from Tony's list, archival request submitted to the Titans, agreements finalized.</div></div>
+      <div class="tl-row flag"><div class="tl-when">Week of August 17</div><div class="tl-what">Annual meeting interview block. Turner's community and citizenship professionals from across the country are in Nashville. We capture executives and the national story in one concentrated window.</div></div>
+      <div class="tl-row"><div class="tl-when">August to October</div><div class="tl-what">TC2 capture. Cohorts 13 through 15 documented on site in the trailers, plus small business and community outreach story shoots.</div></div>
+      <div class="tl-row flag"><div class="tl-when">Before Thanksgiving</div><div class="tl-what">The final cohort wraps and the all cohort celebration honors graduates from the full program. We capture the moment the story has been building toward.</div></div>
+      <div class="tl-row"><div class="tl-when">December to January</div><div class="tl-what">Edit and review. New capture woven with the archive, revision rounds with your team and the Titans.</div></div>
+      <div class="tl-row"><div class="tl-when">Early February 2027</div><div class="tl-what">Final masters delivered. Every film finished, formatted, and in your hands ahead of turnover.</div></div>
+      <div class="tl-row flag"><div class="tl-when">Late Feb / Early March</div><div class="tl-what">The stadium opens. The story launches with it.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT NUMBERS -->
+<section class="dark">
+  <div class="wrap">
+    <div class="eyebrow wr">07 · The Story So Far</div>
+    <h2 class="wr">The numbers are already remarkable. Now they need <em>a voice.</em></h2>
+    <p class="lede wr">Through the topping out milestone, the project's community program has produced results most cities never see. Numbers open doors. Stories walk through them.</p>
+    <div class="impact">
+      <div class="istat wr"><div class="num"><span class="count" data-target="112">0</span>+</div><div class="lbl">TC2 graduates and counting, with three cohorts still to come</div></div>
+      <div class="istat wr"><div class="num"><span class="count" data-target="78">0</span>%</div><div class="lbl">Of graduates receiving job offers in the industry</div></div>
+      <div class="istat wr"><div class="num">$<span class="count" data-target="110">0</span>M+</div><div class="lbl">Paid to disadvantaged business enterprise firms</div></div>
+      <div class="istat wr"><div class="num"><span style="font-size:.42em;color:var(--light);">nearly&nbsp;</span><span class="count" data-target="100">0</span></div><div class="lbl">Small, women owned, and minority owned businesses on the project</div></div>
+      <div class="istat wr"><div class="num"><span class="count" data-target="18">0</span>.5%</div><div class="lbl">Of work hours performed by Promise Zone residents</div></div>
+      <div class="istat wr"><div class="num"><span class="count" data-target="120">0</span>+</div><div class="lbl">Community and workforce events across Middle Tennessee</div></div>
+    </div>
+    <p class="stat-note wr">Figures as reported by the Tennessee Builders Alliance through the November 2025 topping out and early 2026 program updates. We will verify final numbers with your team before anything reaches a screen.</p>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="dark" id="work" style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow wr">08 · Our Work</div>
+    <h2 class="wr">Press <em>play.</em></h2>
+    <p class="lede wr">We have already filmed inside this project's world. Titan's House, produced with Polk &amp; Associates of the Tennessee Builders Alliance, sits first. Beside it, the R.E.D. Academy film from our call, then graduations, community milestones, and development storytelling. Every film plays right on this page.</p>
+
+    <div class="slate wr">
+      <span class="rec"></span>
+      <span>Prod: <b>Community Impact</b></span>
+      <span>Scene: <b>Nashville, Tennessee</b></span>
+      <span>Cut: <b>The Screening Room</b></span>
+    </div>
+    <div class="screen wr">
+      <div class="featured">
+        <div class="lite feat" data-vid="1180691779" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1180691779.jpg')">
+          <div class="ov"><span class="cat">Polk &amp; Associates · On This Project's Team</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">Titan's House<small>Titans Partnership</small></span></div>
+        </div>
+        <div class="lite feat" data-vid="1010615358" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1010615358.jpg')">
+          <div class="ov"><span class="cat">The Reference From Our Call</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">R.E.D. Academy<small>Interview Storytelling</small></span></div>
+        </div>
+      </div>
+      <div class="reel">
+        <div class="lite" data-vid="1200589895" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200589895.jpg')">
+          <div class="ov"><span class="cat">Graduation</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">TECA Graduation Day 2026</span></div>
+        </div>
+        <div class="lite" data-vid="1200589894" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200589894.jpg')">
+          <div class="ov"><span class="cat">Community Event</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">Eastpoint Neighborhood Kickoff</span></div>
+        </div>
+        <div class="lite" data-vid="1200612007" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200612007.jpg')">
+          <div class="ov"><span class="cat">Development Storytelling</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">Holladay Ventures</span></div>
+        </div>
+        <div class="lite" data-vid="1200589896" onclick="playVid(this)" style="background-image:url('https://vumbnail.com/1200589896.jpg')">
+          <div class="ov"><span class="cat">Awards Ceremony</span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="nm">NPEF Hall of Fame 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT -->
+<section id="invest">
+  <div class="wrap">
+    <div class="eyebrow wr">09 · Investment</div>
+    <h2 class="wr">Three ways to <em>tell it.</em></h2>
+    <p class="lede wr">Every tier delivers the signature film, finished and launch ready for the opening window. The middle tier is our recommendation. It captures the moments that will not come back and builds the branch catalog while the cameras are already rolling. The full line by line scope sits in the ledger just below, and coverage of milestone events themselves has its own section after that.</p>
+    <div class="tiers">
+      <div class="tier wr">
+        <div class="tname">The Signature Film</div>
+        <div class="tprice">$19,500</div>
+        <div class="tcap">Project engagement</div>
+        <ul>
+          <li>The signature community impact film, six to eight minutes</li>
+          <li>A two minute executive cut for stages and boardrooms</li>
+          <li>Annual meeting week interview block plus two site production days</li>
+          <li>Archival weave from the Titans and Turner libraries</li>
+          <li>Three vertical social cuts</li>
+          <li>Masters for premiere screen, web, and social</li>
+          <li>Two revision rounds</li>
+        </ul>
+      </div>
+      <div class="tier rec wr">
+        <div class="tname">The Film and the Series</div>
+        <div class="tprice">$42,000</div>
+        <div class="tcap">Project engagement</div>
+        <ul>
+          <li>Everything in The Signature Film</li>
+          <li>Four branch films, about three minutes each. A graduate, a business, the community, an employer</li>
+          <li>TC2 cohort capture across cohorts 13 through 15, in the trailers while they stand</li>
+          <li>Interview and story capture at the all cohort graduation celebration</li>
+          <li>Six production days total</li>
+          <li>Eight vertical social cuts</li>
+          <li>Photography set from every production day</li>
+          <li>Two revision rounds per film</li>
+        </ul>
+      </div>
+      <div class="tier wr">
+        <div class="tname">The Full Campaign</div>
+        <div class="tprice">$68,000</div>
+        <div class="tcap">Project engagement</div>
+        <ul>
+          <li>Everything in The Film and the Series</li>
+          <li>Eight production days across the fall</li>
+          <li>The branch series expanded to eight films across all three pillars</li>
+          <li>A national storyline film built around the annual meeting. Turner's community work across the country, arriving in Nashville</li>
+          <li>A launch package for the opening window. Teaser, countdown social set, premiere assets</li>
+          <li>Fifteen vertical social cuts and a full photography library</li>
+          <li>The story catalog, packaged and organized for Turner, the Titans, and community partners</li>
+          <li>Priority turnaround and three revision rounds per film</li>
+        </ul>
+      </div>
+    </div>
+    <p class="invest-note">All figures in USD · Travel and licensing billed at cost · Pricing valid through August 28, 2026</p>
+  </div>
+</section>
+
+<!-- ITEMIZED LEDGER -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow wr">10 · The Ledger</div>
+    <h2 class="wr">Every line, <em>accounted for.</em></h2>
+    <p class="lede wr">No allowances, no vague buckets. Here is the full scope of each tier, line by line, so every dollar has a deliverable attached to it.</p>
+    <div class="ledger-wrap wr">
+      <table class="ledger">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Scope, itemized</th>
+            <th>Signature<small>$19,500</small></th>
+            <th class="rec-col">Film + Series<small>$42,000</small></th>
+            <th>Full Campaign<small>$68,000</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group"><td colspan="4">Foundation · in every tier</td></tr>
+          <tr><td class="item">Story mapping session and locked interview roster</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Archival research and weave from the Titans and Turner libraries</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Broadcast grade color, sound mix, and titles on every film</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Masters for premiere screen, web, and social</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Twelve month master archive</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr class="group"><td colspan="4">Production</td></tr>
+          <tr><td class="item">Annual meeting interview block, week of August 17</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Site production days</td><td class="v">2</td><td class="v rec-col">6</td><td class="v">8</td></tr>
+          <tr><td class="item">TC2 cohort capture, cohorts 13 through 15, in the trailers</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Graduation celebration interview and story capture</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Photography</td><td class="v"><span class="no">·</span></td><td class="v rec-col">Every day</td><td class="v">Full library</td></tr>
+          <tr class="group"><td colspan="4">Films</td></tr>
+          <tr><td class="item">The signature film, six to eight minutes</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">The two minute executive cut</td><td class="v"><span class="yes">✓</span></td><td class="v rec-col"><span class="yes">✓</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Branch story films, about three minutes each</td><td class="v"><span class="no">·</span></td><td class="v rec-col">4</td><td class="v">8</td></tr>
+          <tr><td class="item">National storyline film, the annual meeting arc</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="no">·</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Launch teaser for the opening window</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="no">·</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr class="group"><td colspan="4">Social and launch</td></tr>
+          <tr><td class="item">Vertical social cuts</td><td class="v">3</td><td class="v rec-col">8</td><td class="v">15</td></tr>
+          <tr><td class="item">Countdown social set and premiere assets</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="no">·</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr><td class="item">Story catalog, packaged for Turner, the Titans, and partners</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="no">·</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr class="group"><td colspan="4">Service</td></tr>
+          <tr><td class="item">Revision rounds per film</td><td class="v">2</td><td class="v rec-col">2</td><td class="v">3</td></tr>
+          <tr><td class="item">Priority turnaround</td><td class="v"><span class="no">·</span></td><td class="v rec-col"><span class="no">·</span></td><td class="v"><span class="yes">✓</span></td></tr>
+          <tr class="total">
+            <td>Finished assets delivered</td>
+            <td><span class="big">5</span></td>
+            <td class="rec-col"><span class="big">20</span></td>
+            <td><span class="big">30+</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="value-note wr">
+      <div class="vcell"><div class="vn">$3,900</div><div class="vl">Per finished asset · The Signature Film</div></div>
+      <div class="vcell"><div class="vn">$2,100</div><div class="vl">Per finished asset · The Film and the Series</div></div>
+      <div class="vcell"><div class="vn">A library, not a video</div><div class="vl">Every tier compounds · The Full Campaign adds the launch</div></div>
+    </div>
+    <p class="lede wr" style="margin-top:2.2rem;font-size:1rem;">The middle tier nearly halves the cost per finished asset against the entry tier, because the crew is already rolling. Once the cameras are on site for the signature film, every additional story is captured at the margin, not from scratch. That is the economics of doing this once, and doing it whole.</p>
+  </div>
+</section>
+
+<!-- MILESTONE EVENTS (SEPARATE) -->
+<section class="dark" id="events">
+  <div class="wrap">
+    <div class="eyebrow wr">11 · Optional · Milestone Events</div>
+    <h2 class="wr">The celebration days deserve their <em>own crew.</em></h2>
+    <p class="lede wr">The films above tell the story. The big days along the way, the all cohort graduation celebration, annual meeting gatherings, and the opening itself, are each their own production with their own crew and plan. We keep them separate on purpose. When one is on the calendar, send us the details and we will build it as its own proposal.</p>
+    <div class="inc-grid">
+      <div class="wr">
+        <p class="evcopy">From live event direction and multiple cameras to photography and a same week recap film, we produce event days end to end. The graduation celebration before Thanksgiving is the natural first candidate. Covered in full, it becomes both a moment for the room and a permanent asset for the story.</p>
+      </div>
+      <div class="inc wr">
+        <span class="tag">Event Coverage</span>
+        <h3>Everything we can bring to a milestone day</h3>
+        <ul>
+          <li>Multi camera coverage and a director on site</li>
+          <li>Event photography across the day</li>
+          <li>A full recap film delivered the same week</li>
+          <li>Social recap set for post event reach</li>
+          <li>Interview capture built into the day's plan</li>
+          <li>Footage archived into the project library</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="wrap narrow">
+    <div class="eyebrow wr">12 · About WCG</div>
+    <h2 class="wr">Nashville based. Broadcast disciplined. Already in <em>the neighborhood.</em></h2>
+    <p class="lede wr">Walton Creative Group is a Nashville based creative production and strategy company. Our roots are in broadcast, with editorial credits across Fox Soul, PeachTree TV, and APEX, and our client work spans nonprofits, developers, and community institutions across Middle Tennessee. We work alongside Polk &amp; Associates, a Tennessee Builders Alliance partner on this project, and we know the Titans' approval landscape from experience.</p>
+    <div class="trustline wr" style="margin-top:2.4rem;">
+      <span>Amazon</span><span>United Way</span><span>Fox Soul</span><span>Polk &amp; Associates</span><span>R.H. Boyd</span><span>Maverick City Music</span>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section style="padding-top:0;">
+  <div class="wrap narrow">
+    <div class="eyebrow wr">13 · The Details</div>
+    <h2 class="wr">Clean and <em>simple.</em></h2>
+    <ul class="details-list wr">
+      <li>A story mapping session with your team, and the Titans at the right moment, before anything is recorded.</li>
+      <li>Coordination with site safety protocols and designated filming spaces on the project.</li>
+      <li>Two revision rounds per film at the first two tiers, three at the top tier. Additional rounds billed at standard hourly rate.</li>
+      <li>Final delivery in your specified formats. Master files retained by WCG for twelve months.</li>
+      <li>You own the final delivered work upon full payment. WCG may use the work in portfolio and marketing with your approval.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dark cta" id="next">
+  <div class="wrap">
+    <div class="eyebrow wr" style="text-align:center;">14 · Next Steps</div>
+    <h2 class="wr">The stadium opens once. The story should be <em>ready.</em></h2>
+    <div class="ctarow wr">
+      <a class="btn paperbtn" href="mailto:aaron@waltoncreativegroup.com?subject=Titans%20Stadium%20Community%20Impact%20Story">Approve a Tier</a>
+      <a class="btn ghostlight" href="https://calendly.com/waltoncreativegroup/available" target="_blank" rel="noopener">Book a 15 Minute Call</a>
+    </div>
+    <div class="contact wr">
+      Aaron Walton, Founder and Creative Director<br>
+      <a href="mailto:aaron@waltoncreativegroup.com">aaron@waltoncreativegroup.com</a> &nbsp;·&nbsp; 615 417 4740<br>
+      <a href="https://waltoncreativegroup.com">waltoncreativegroup.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Walton Creative Group · Nashville, Tennessee</span>
+    <span class="mono">Proposal for Turner Construction · Titans Stadium Community Impact Story · July 2026</span>
+  </div>
+</footer>
+
+<script>
+  const bar=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll('.wr').forEach(el=>io.observe(el));
+  const cio=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=+el.dataset.target,dur=1600,t0=performance.now();
+    function tick(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);}
+    requestAnimationFrame(tick);cio.unobserve(el);
+  }),{threshold:.5});
+  document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+  function playVid(el){
+    if(el.classList.contains('playing'))return;
+    var id=el.dataset.vid;
+    el.innerHTML='<iframe src="https://player.vimeo.com/video/'+id+'?autoplay=1&color=695684&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+    el.classList.add('playing');
+  }
+</script>
+</body>
+</html>
