@@ -1,1 +1,325 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Boyd's Commentary Ad Strategy | R.H. Boyd x WCG">
+<meta property="og:description" content="Week one findings and the two changes that unlock the Commentary campaign. Prepared for Finance and Shipping review.">
+<meta property="og:image" content="https://rhboyd.com/cdn/shop/files/2026-27_Boyds_Commentary_1200x1200.jpg">
+<meta property="og:type" content="website">
+
+<title>Boyd's Commentary Ad Strategy | R.H. Boyd x Walton Creative Group</title>
+<style>
+  :root {
+    --rhb-red: #ed1b2e;
+    --rhb-black: #111111;
+    --rhb-gold: #c9a227;
+    --ink: #222222;
+    --paper: #ffffff;
+    --soft: #f7f5f2;
+    --line: #e5e1da;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: var(--ink); background: var(--soft); line-height: 1.6; }
+  .page { max-width: 960px; margin: 0 auto; background: var(--paper); }
+
+  /* Header */
+  .masthead { background: var(--rhb-black); color: #fff; padding: 48px 56px 40px; position: relative; }
+  .masthead::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--rhb-red); }
+  .brand { font-size: 34px; font-weight: 800; letter-spacing: 2px; }
+  .brand small { display: block; font-size: 11px; letter-spacing: 5px; font-weight: 400; color: #bbb; margin-top: 2px; }
+  .masthead h1 { font-size: 26px; font-weight: 700; margin-top: 28px; line-height: 1.3; }
+  .masthead .sub { color: #cfcfcf; font-size: 15px; margin-top: 8px; }
+  .tagline { position: absolute; top: 48px; right: 56px; text-align: right; font-size: 12px; color: #999; letter-spacing: 1px; }
+
+  section { padding: 44px 56px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--rhb-red); margin-bottom: 18px; font-weight: 700; }
+  h3 { font-size: 20px; margin-bottom: 12px; }
+  p { margin-bottom: 14px; font-size: 15.5px; }
+  .lede { font-size: 18px; line-height: 1.7; }
+
+  /* Stat band */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 8px; }
+  .stat { background: var(--soft); border-top: 3px solid var(--rhb-red); padding: 18px 16px; }
+  .stat .num { font-size: 26px; font-weight: 800; color: var(--rhb-black); }
+  .stat .lbl { font-size: 12.5px; color: #666; margin-top: 4px; line-height: 1.4; }
+  .stat.gold { border-top-color: var(--rhb-gold); }
+
+  /* Comparison table */
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14.5px; }
+  th { text-align: left; padding: 10px 14px; background: var(--rhb-black); color: #fff; font-weight: 600; font-size: 13px; letter-spacing: .5px; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  tr:nth-child(even) td { background: #fbfaf8; }
+  .good { color: #1a7d3c; font-weight: 700; }
+  .bad { color: var(--rhb-red); font-weight: 700; }
+
+  /* Receipt visual */
+  .receipts { display: flex; gap: 24px; margin: 26px 0 10px; flex-wrap: wrap; }
+  .receipt { flex: 1; min-width: 260px; border: 1px solid var(--line); background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.06); padding: 22px 24px; font-size: 14.5px; }
+  .receipt h4 { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #888; margin-bottom: 14px; }
+  .receipt .row { display: flex; justify-content: space-between; padding: 5px 0; }
+  .receipt .rule { border-top: 1px dashed #bbb; margin: 8px 0; }
+  .receipt .total { font-weight: 800; font-size: 16px; }
+  .receipt .verdict { margin-top: 14px; font-size: 13px; font-weight: 700; padding: 7px 10px; text-align: center; border-radius: 3px; }
+  .verdict.walks { background: #fdeaec; color: var(--rhb-red); }
+  .verdict.buys { background: #e8f5ec; color: #1a7d3c; }
+
+  /* Two-column strategy */
+  .lanes { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
+  .lane { border: 1px solid var(--line); padding: 26px; background: #fff; }
+  .lane .tag { display: inline-block; background: var(--rhb-red); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; padding: 4px 10px; margin-bottom: 14px; }
+  .lane.two .tag { background: var(--rhb-gold); color: var(--rhb-black); }
+  .lane ul { margin: 10px 0 0 18px; }
+  .lane li { font-size: 14.5px; margin-bottom: 8px; }
+
+  /* Ad mockup */
+  .mockrow { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 24px; align-items: start; }
+  .fb-ad { border: 1px solid #dcdcdc; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-size: 14px; max-width: 420px; }
+  .fb-head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+  .fb-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--rhb-black); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; }
+  .fb-name { font-weight: 700; font-size: 14px; }
+  .fb-spons { font-size: 12px; color: #888; }
+  .fb-copy { padding: 0 14px 12px; font-size: 13.5px; }
+  .fb-img { width: 100%; display: block; }
+  .fb-link { background: #f0f2f5; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
+  .fb-link .dom { font-size: 11px; color: #888; text-transform: uppercase; }
+  .fb-link .hl { font-weight: 700; font-size: 14px; }
+  .fb-btn { background: var(--rhb-red); color: #fff; font-weight: 700; font-size: 13px; padding: 8px 14px; border-radius: 5px; white-space: nowrap; }
+  .mock-note { font-size: 13px; color: #777; margin-top: 10px; font-style: italic; }
+
+  /* Landing page mockup */
+  .lp { border: 1px solid var(--line); box-shadow: 0 4px 18px rgba(0,0,0,.09); margin-top: 26px; }
+  .lp-browser { background: #e8e6e2; padding: 8px 14px; font-size: 12px; color: #777; display: flex; gap: 6px; align-items: center; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #c9c5bf; }
+  .lp-url { background: #fff; border-radius: 20px; padding: 3px 16px; margin-left: 10px; flex: 1; color: #555; }
+  .lp-hero { background: var(--rhb-black); color: #fff; text-align: center; padding: 40px 30px 34px; }
+  .lp-hero .kicker { color: var(--rhb-gold); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .lp-hero h3 { font-size: 30px; margin: 10px 0 8px; }
+  .lp-hero p { color: #ccc; font-size: 15px; max-width: 560px; margin: 0 auto; }
+  .lp-products { display: flex; gap: 0; justify-content: center; padding: 34px 30px 10px; flex-wrap: wrap; align-items: center; }
+  .lp-card { text-align: center; width: 250px; padding: 0 20px; }
+  .lp-card img { width: 190px; height: 190px; object-fit: cover; border: 1px solid var(--line); }
+  .lp-card .pname { font-weight: 700; margin-top: 12px; font-size: 15px; }
+  .lp-card .pdesc { font-size: 13px; color: #666; margin-top: 4px; }
+  .lp-card .pprice { color: #999; font-size: 14px; margin-top: 6px; text-decoration: line-through; }
+  .plus { font-size: 44px; font-weight: 300; color: var(--rhb-red); padding: 0 6px; }
+  .lp-offer { text-align: center; padding: 8px 30px 38px; }
+  .lp-offer .bundle-price { font-size: 34px; font-weight: 800; color: var(--rhb-black); }
+  .lp-offer .bundle-price small { font-size: 15px; color: #1a7d3c; font-weight: 700; margin-left: 8px; }
+  .lp-cta { display: inline-block; background: var(--rhb-red); color: #fff; font-weight: 800; font-size: 17px; padding: 15px 44px; border-radius: 4px; margin-top: 14px; letter-spacing: .5px; }
+  .lp-sub { font-size: 12.5px; color: #888; margin-top: 10px; }
+  .lp-why { background: var(--soft); padding: 26px 34px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; font-size: 13px; }
+  .lp-why b { display: block; margin-bottom: 4px; font-size: 13.5px; }
+
+  /* How it works */
+  .flow { display: flex; gap: 0; margin-top: 24px; flex-wrap: wrap; }
+  .step { flex: 1; min-width: 180px; padding: 20px 22px; border: 1px solid var(--line); border-left: 4px solid var(--rhb-red); background: #fff; margin-right: 14px; margin-bottom: 12px; }
+  .step .n { font-size: 12px; font-weight: 800; color: var(--rhb-red); letter-spacing: 2px; }
+  .step p { font-size: 13.5px; margin: 6px 0 0; }
+
+  /* Asks */
+  .asks { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
+  .ask { background: var(--rhb-black); color: #fff; padding: 28px; }
+  .ask h4 { color: var(--rhb-gold); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+  .ask p, .ask li { font-size: 14.5px; color: #ddd; }
+  .ask ul { margin: 8px 0 0 18px; }
+  .ask li { margin-bottom: 8px; }
+  .ask .impact { margin-top: 14px; padding-top: 12px; border-top: 1px solid #333; font-size: 13.5px; color: var(--rhb-gold); font-weight: 700; }
+
+  footer { padding: 30px 56px; font-size: 12.5px; color: #888; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .foot-brand { font-weight: 700; color: var(--rhb-black); }
+  @media (max-width: 720px) {
+    section, .masthead { padding-left: 24px; padding-right: 24px; }
+    .stats, .lanes, .asks, .mockrow, .lp-why { grid-template-columns: 1fr; }
+    .tagline { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="tagline">TEACH &middot; LEAD &middot; INSPIRE<br>1896&ndash;2026 &middot; 130 YEARS</div>
+    <div class="brand">R.H. BOYD<small>EST. 1896</small></div>
+    <h1>Boyd's Commentary Advertising: What Week One Taught Us,<br>and the Two Changes That Unlock It</h1>
+    <div class="sub">Prepared for Finance and Shipping review &middot; July 27, 2026 &middot; Walton Creative Group</div>
+  </div>
+
+  <section>
+    <h2>Executive Summary</h2>
+    <p class="lede">Our new Meta ads are successfully bringing buyers to rhboyd.com. The Worded Hymnal campaign produced 21 orders in week one. The Boyd's Commentary campaign produced the same strong traffic and add-to-carts, but shoppers abandon at one exact step: the shipping quote. A $25.99 book showing $14 to $18 shipping becomes a $40+ purchase, and single-copy buyers walk away. Two changes fix this: a book-rate shipping option for single-copy orders, and a Commentary + Journal bundle that makes the total feel right. Meanwhile, we redirect ad targeting toward the buyers already proving they convert: churches ordering in bulk.</p>
+    <div class="stats">
+      <div class="stat gold"><div class="num">21</div><div class="lbl">Worded Hymnal orders from ads in week one ($1,641)</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">Commentary ad checkouts completed, despite 30 add-to-carts</div></div>
+      <div class="stat"><div class="num">$14&ndash;$18</div><div class="lbl">Shipping quoted on a single $25.99 Commentary</div></div>
+      <div class="stat"><div class="num">100</div><div class="lbl">Commentary copies sold this same week through bulk church orders</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Diagnosis</h2>
+    <h3>The ads work. The checkout math doesn't.</h3>
+    <p>Both campaigns launched the week of July 20 with identical structure, budgets, and audiences. The difference in outcomes isolates the problem precisely:</p>
+    <table>
+      <tr><th>Week One</th><th>Ad Spend</th><th>Click Rate</th><th>Started Checkout</th><th>Completed</th><th>Close Rate</th></tr>
+      <tr><td><b>Worded Hymnal</b></td><td>$121</td><td>4.2%</td><td>29</td><td class="good">21 orders</td><td class="good">72%</td></tr>
+      <tr><td><b>Commentary + Journal</b></td><td>$136</td><td>3.1&ndash;4.7%</td><td>10</td><td class="bad">0 orders</td><td class="bad">0%</td></tr>
+    </table>
+    <p>Shoppers who started checkout saw this:</p>
+    <div class="receipts">
+      <div class="receipt">
+        <h4>Actual abandoned checkout &middot; Jul 24</h4>
+        <div class="row"><span>Boyd's Commentary 2026&ndash;2027</span><span>$25.99</span></div>
+        <div class="row"><span>Priority Mail</span><span class="bad">$15.35</span></div>
+        <div class="rule"></div>
+        <div class="row total"><span>Total</span><span>$41.34</span></div>
+        <div class="verdict walks">59% shipping surcharge &rarr; buyer walks</div>
+      </div>
+      <div class="receipt">
+        <h4>Same product &middot; church bulk order</h4>
+        <div class="row"><span>Boyd's Commentary &times; 15</span><span>$389.85</span></div>
+        <div class="row"><span>UPS Ground</span><span>$28.28</span></div>
+        <div class="rule"></div>
+        <div class="row total"><span>Total</span><span>$418.13</span></div>
+        <div class="verdict buys">7% shipping share &rarr; order completes</div>
+      </div>
+    </div>
+    <p>The product is not the problem. Boyd's Commentary sold roughly 100 copies this same week through direct and email bulk orders, where shipping spreads across many books. Only the single-copy retail buyer arriving from ads is priced out. This matches the May cart-abandonment audit, which found checkout shipping to be the store's largest recovery opportunity (559 abandoned carts, $57K in 90 days).</p>
+  </section>
+
+  <section>
+    <h2>The Strategy</h2>
+    <h3>Two lanes, each built on what the data proved</h3>
+    <div class="lanes">
+      <div class="lane">
+        <span class="tag">LANE 1 &middot; CHURCH &amp; BULK</span>
+        <h3>Advertise to the buyer who already buys</h3>
+        <p>Redirect Commentary prospecting toward pastors, Sunday School directors, and ministry leaders, using assets we already hold:</p>
+        <ul>
+          <li>The R.H. Boyd church mailing list (12,600 contacts) as a direct Meta audience</li>
+          <li>A lookalike audience of 2.2M people modeled on that list</li>
+          <li>Copy reframed from personal devotion to equipping a classroom: "Outfit every teacher and student for the new Sunday School year"</li>
+        </ul>
+        <p style="margin-top:12px"><b>Journal's role:</b> the incentive, not the hero. "Free Bible Study Journal with Commentary orders of 5 or more" via a standard Shopify discount. No new product setup required.</p>
+      </div>
+      <div class="lane two">
+        <span class="tag">LANE 2 &middot; RETAIL BUNDLE</span>
+        <h3>Make the single-buyer total feel right</h3>
+        <p>Sell the Commentary and Journal together at one bundle price, on one page, added to cart in one click:</p>
+        <ul>
+          <li>Bundle price $39.99 (vs $45.98 separately) makes a $12&ndash;15 shipping quote proportionally acceptable</li>
+          <li>One-click "Get Both" button adds both items to cart automatically. Shopify supports this natively; no custom development</li>
+          <li>Honors Dr. Boyd's direction to advertise both products together</li>
+        </ul>
+        <p style="margin-top:12px"><b>Requires:</b> Finance approval of the bundle price, and a Shopify page Emmanuel's team can publish from the mockup below.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lane 1 Mockup</h2>
+    <h3>The church-lane ad</h3>
+    <div class="mockrow">
+      <div>
+        <div class="fb-ad">
+          <div class="fb-head">
+            <div class="fb-avatar">RHB</div>
+            <div><div class="fb-name">R.H. Boyd</div><div class="fb-spons">Sponsored</div></div>
+          </div>
+          <div class="fb-copy">Sunday School starts stronger when every teacher has the same trusted foundation. For 130 years, churches have prepared with Boyd's Commentary. Equip your whole team with the 2026&ndash;2027 edition, and get a free Bible Study Journal with orders of 5 or more.</div>
+          <img class="fb-img" src="https://rhboyd.com/cdn/shop/files/2026-27_Boyds_Commentary_1200x1200.jpg?v=1771876675" alt="Boyd's Commentary 2026-2027">
+          <div class="fb-link">
+            <div><div class="dom">RHBOYD.COM</div><div class="hl">Equip Your Sunday School</div></div>
+            <div class="fb-btn">Shop Now</div>
+          </div>
+        </div>
+        <p class="mock-note">Draft ad concept. Final creative direction belongs to Emmanuel's team.</p>
+      </div>
+      <div>
+        <h3 style="margin-top:8px">Why this lane converts</h3>
+        <p>Bulk orders neutralize the shipping objection entirely. A 10-copy order carries roughly 8% shipping share, in line with what church buyers already accept when they order direct.</p>
+        <p>The audience is not hypothetical. It is R.H. Boyd's own church list and its statistical twins, reached on Meta instead of waiting for the phone or an email open.</p>
+        <p>The free Journal incentive adds urgency and puts the second product into hundreds of church classrooms, seeding future single-copy demand.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lane 2 Mockup</h2>
+    <h3>The bundle landing page on rhboyd.com</h3>
+    <div class="lp">
+      <div class="lp-browser"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="lp-url">rhboyd.com/pages/study-deeper-bundle</span></div>
+      <div class="lp-hero">
+        <div class="kicker">A 130-Year Tradition, Ready for Your Study</div>
+        <h3>Study Deeper. Together.</h3>
+        <p>The trusted lesson commentary and the journal built to capture what you learn. Two resources, one purpose: a richer walk through Scripture.</p>
+      </div>
+      <div class="lp-products">
+        <div class="lp-card">
+          <img src="https://rhboyd.com/cdn/shop/files/2026-27_Boyds_Commentary_1200x1200.jpg?v=1771876675" alt="Boyd's Commentary">
+          <div class="pname">Boyd's Commentary 2026&ndash;2027</div>
+          <div class="pdesc">Scholarly, practical exposition of every Sunday School lesson</div>
+          <div class="pprice">$25.99</div>
+        </div>
+        <div class="plus">+</div>
+        <div class="lp-card">
+          <img src="https://rhboyd.com/cdn/shop/files/0220_a649d989-4cb1-4333-95c2-6ab7e77da830_1200x1200.jpg?v=1756845299" alt="Bible Study Journal">
+          <div class="pname">Bible Study Journal</div>
+          <div class="pdesc">Writing prompts, prayers, and Hebrew and Greek word studies</div>
+          <div class="pprice">$19.99</div>
+        </div>
+      </div>
+      <div class="lp-offer">
+        <div class="bundle-price">$39.99 <small>Save $5.99</small></div>
+        <div class="lp-cta">GET BOTH &rarr;</div>
+        <div class="lp-sub">One click adds both to your cart with the bundle discount applied.</div>
+      </div>
+      <div class="lp-why">
+        <div><b>For Bible Study</b>Follow the lesson in the Commentary, capture insights in the Journal.</div>
+        <div><b>For Sunday School</b>Teachers prepare with confidence; students keep what they learn.</div>
+        <div><b>For Personal Study</b>A structured path through Scripture, in your own hand.</div>
+      </div>
+    </div>
+    <h3 style="margin-top:34px">How the one-click cart works</h3>
+    <div class="flow">
+      <div class="step"><div class="n">STEP 1</div><p>Shopper clicks the ad and lands on the bundle page (a standard Shopify page, pixel tracking intact).</p></div>
+      <div class="step"><div class="n">STEP 2</div><p>"Get Both" uses a Shopify cart permalink: both items enter the cart in one click, discount code applied automatically.</p></div>
+      <div class="step"><div class="n">STEP 3</div><p>Checkout shows $39.99 plus shipping. The total now reads as fair, and the buyer completes.</p></div>
+    </div>
+    <p style="margin-top:10px; font-size:13.5px; color:#777;">No custom development, no app subscriptions. The permalink and discount are native Shopify features. A dedicated bundle product with its own inventory sync can follow later as the permanent version.</p>
+  </section>
+
+  <section>
+    <h2>The Asks</h2>
+    <div class="asks">
+      <div class="ask">
+        <h4>For the Shipping Department</h4>
+        <p>Enable a book-rate option for single-book retail orders:</p>
+        <ul>
+          <li>USPS Media Mail (books qualify; typically about $5 for one book) or a flat $4.99 book rate</li>
+          <li>Applies to single-copy and small retail orders; bulk orders keep current carriers</li>
+        </ul>
+        <div class="impact">Impact: this week alone, 11 Commentary checkouts died at the shipping quote. The May audit projected roughly $18K per 90 days recoverable storewide.</div>
+      </div>
+      <div class="ask">
+        <h4>For Finance</h4>
+        <p>Approve two pricing actions:</p>
+        <ul>
+          <li>Bundle price of $39.99 for Commentary + Journal ($5.99 off combined retail)</li>
+          <li>A Buy X Get Y discount: one free Bible Study Journal on Commentary orders of 5 or more copies</li>
+        </ul>
+        <div class="impact">Impact: unlocks a stalled ad campaign already producing 30 add-to-carts per week, and arms the church lane with a compelling bulk offer.</div>
+      </div>
+    </div>
+    <p style="margin-top:22px;">With these approved, Walton Creative Group can have the church-lane ads live within two business days and the bundle page ready for Emmanuel's team the same week. The Worded Hymnal campaign proves the audience buys when the checkout math is fair; these changes give Boyd's Commentary the same fair fight.</p>
+  </section>
+
+  <footer>
+    <div><span class="foot-brand">R.H. BOYD</span> &middot; Teach. Lead. Inspire. &middot; 130 Years (1896&ndash;2026)</div>
+    <div>Prepared by Walton Creative Group &middot; aaron@waltoncreativegroup.com</div>
+  </footer>
+
+</div>
+</body>
+</html>
