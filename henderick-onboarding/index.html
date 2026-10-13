@@ -85,6 +85,21 @@
   .dark .flagbox p{color:rgba(250,247,242,.8);}
   .disc{margin-top:1.3rem;font-family:var(--mono);font-size:.65rem;letter-spacing:.05em;color:#7a7286;line-height:1.95;}
   .dark .disc{color:rgba(250,247,242,.44);}
+  .setup{margin-top:2.4rem;display:grid;gap:1.5rem;}
+  .plat{background:#fff;border:1px solid rgba(105,86,132,.18);border-radius:8px;overflow:hidden;}
+  .plat>header{background:rgba(105,86,132,.07);padding:1.15rem 1.5rem;border-bottom:1px solid rgba(105,86,132,.14);display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;}
+  .plat>header h4{font-family:var(--serif);font-weight:400;font-size:1.3rem;}
+  .plat>header .meta{font-family:var(--mono);font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--purple);margin-left:auto;text-align:right;line-height:1.7;}
+  .plat .body{padding:1.5rem;}
+  .plat .intro{font-size:.9rem;color:#544d61;margin-bottom:1.2rem;}
+  ol.steps{list-style:none;counter-reset:s;display:grid;gap:.85rem;}
+  ol.steps li{counter-increment:s;position:relative;padding-left:2.4rem;font-size:.89rem;color:#3c3646;}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:.05rem;width:1.65rem;height:1.65rem;border-radius:50%;background:rgba(105,86,132,.1);color:var(--purple);font-family:var(--mono);font-size:.68rem;display:flex;align-items:center;justify-content:center;}
+  ol.steps li b{color:#111;}
+  ol.steps code,.plat code{font-family:var(--mono);font-size:.82em;background:rgba(105,86,132,.09);padding:.12em .42em;border-radius:3px;color:var(--purple);white-space:nowrap;}
+  .watch{margin-top:1.2rem;padding:.95rem 1.2rem;background:rgba(105,86,132,.06);border-left:3px solid var(--purple);border-radius:0 6px 6px 0;font-size:.85rem;color:#544d61;}
+  .watch b{color:#111;display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:.3rem;}
+  @media(max-width:760px){.plat>header .meta{margin-left:0;text-align:left;width:100%;}.plat .body{padding:1.2rem;}}
   footer{background:#0e0a18;color:var(--paper);padding:clamp(2.6rem,5vw,3.8rem) 0 2rem;}
   .fgrid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-end;}
   .fgrid .nm{font-family:var(--serif);font-size:1.25rem;}
@@ -100,6 +115,7 @@
   <div class="links">
     <a href="#now">This Week</a>
     <a href="#access">What We Need</a>
+    <a href="#setup">Account Setup</a>
     <a href="#calendar">Capture Calendar</a>
     <a href="#how">How We Work</a>
   </div>
@@ -109,11 +125,11 @@
   <div class="wrap"><div class="narrow">
     <div class="kicker">Walton Creative Group &nbsp;&times;&nbsp; Henderick</div>
     <h1>Getting started. <em>Here is the list.</em></h1>
-    <p class="lede">Everything we need from your side to begin, who owns each item, and what we are filming first. Most of this takes minutes. The two things with real deadlines are marked.</p>
+    <p class="lede">Everything we need from your side to begin, who owns each item, and a step by step walkthrough for every account. Most of this takes minutes. The pieces with approval windows are marked, and those are the ones worth starting first.</p>
     <div class="trustline">
       <div>Prepared for<b>Waddell and the Henderick team</b></div>
       <div>Date<b>October 12, 2026</b></div>
-      <div>First capture<b>This week</b></div>
+      <div>Starts with<b>Accounts and access</b></div>
       <div>Leading with<b>Flooring and construction</b></div>
     </div>
   </div></div>
@@ -124,16 +140,16 @@
   <div class="wrap">
     <div class="narrow">
       <div class="eyebrow">01 &middot; This Week</div>
-      <h2>Two things have dates <em>that will not move.</em></h2>
-      <p class="lede">Everything else on this page can happen over the next couple of weeks. These two cannot.</p>
+      <h2>Setup comes first. <em>Here is why.</em></h2>
+      <p class="lede">Nothing publishes, nothing runs, and no advertising starts until the accounts exist. Two of them carry approval windows nobody can shorten, so they go ahead of the cameras rather than alongside them.</p>
     </div>
     <div class="cards">
-      <div class="card"><div class="tag">Thursday, October 15</div><h4>The outdoor court striping</h4><p>You mentioned the crew starts Thursday. Tell us the site and a rough start time and we will be there for the time lapse and the drone pass. Striping is one of the few things in this trade that reads instantly on video, and we would rather catch this one than wait for the next.</p></div>
-      <div class="card"><div class="tag">Before October 31</div><h4>Cruzen Street, before you move</h4><p>You said you are only in this building to the end of the month. Once you are out, that room is gone. We would like one session here for team footage, the operation, and the equipment. Half a day, worked around whatever is already on the schedule.</p></div>
+      <div class="card"><div class="tag">Start immediately &middot; up to two weeks</div><h4>Google Business Profile verification</h4><p>Google verifies the business before the profile does anything. That can take up to two weeks, and nothing visible happens while it runs. Starting it on day one means it finishes while the rest of the work is underway rather than after.</p></div>
+      <div class="card"><div class="tag">One day to one week</div><h4>Meta business verification</h4><p>Facebook asks for the company EIN and a card on file before a business portfolio can advertise. Approval runs anywhere from a day to a week, which is why the Meta setup starts as soon as we know whose profile it is built on.</p></div>
     </div>
     <div class="flagbox">
-      <h4>And one that needs a decision rather than a date</h4>
-      <p>The police training academy walkthrough with Doug Zino. Filming on that site carries permission questions that are worth answering before anyone arrives with a camera rather than after. If the walkthrough is happening this week, we are glad to come and look without filming anything, so we understand the site before asking for access.</p>
+      <h4>Google leads, Meta follows</h4>
+      <p>Google has no account history requirement, so it can begin the moment you have an hour. Meta weights account age, history, and friend graph when deciding how much to trust an account, so the Meta timeline depends on which profile the business portfolio is built on. Section 02 walks through both. If anything stalls, email Aaron and he will work through it with you, or come by next week and finish whatever is left.</p>
     </div>
   </div>
 </section>
@@ -149,7 +165,7 @@
     </div>
     <div class="ask">
       <div class="arow hot"><div class="n">01</div><div><h4>Confirm the marketing email address</h4><p>You mentioned marketing at the company domain. Send it to us spelled out exactly as it should be, since every account gets built on it and a typo there is painful to undo later.</p></div><div class="who">Will or IT<br>Before we build</div></div>
-      <div class="arow hot"><div class="n">02</div><div><h4>Will sets up the work profile</h4><p>Will offered to create a work Facebook profile, which is the cleanest answer to keeping this off Waddell's personal account. Facebook requires a real person as administrator, so that profile becomes the keyholder while Henderick owns everything underneath it. We will walk through it together. Expect Facebook to ask for the EIN and a card on file, and expect approval to take anywhere from a day to a week.</p></div><div class="who">Will and Aaron<br>Week one</div></div>
+      <div class="arow hot"><div class="n">02</div><div><h4>Whose Facebook profile the portfolio is built on</h4><p>Facebook requires a real person as administrator. That profile is a login key, not an owner, and Henderick owns everything underneath it. Meta weights account age, history, and friend graph when deciding how much to trust an account, so an established personal profile is strongly preferred over a new one. Waddell or Will, whichever of you already has one. The role is invisible either way, since page and portfolio admins are never shown publicly. Step by step in section 03.</p></div><div class="who">Waddell or Will<br>Week one</div></div>
       <div class="arow hot"><div class="n">03</div><div><h4>The existing Instagram account</h4><p>It sounds like it is tangled up with a personal profile and nobody has been able to get back into it. Tell us what you remember about how it was set up and we will either recover it or start clean. Either is fine. Knowing which is what matters.</p></div><div class="who">Anyone who remembers</div></div>
       <div class="arow hot"><div class="n">04</div><div><h4>An introduction to Jonathan</h4><p>For the website. We are not looking to take anything over. We need to understand where it is hosted and how to get landing pages added without stepping on his work. The Google Business Profile also starts this week, and its verification step can take two weeks, so it begins early even though nothing visible happens for a while.</p></div><div class="who">Waddell or Jennifer</div></div>
       <div class="arow"><div class="n">05</div><div><h4>Your project schedule, rolling</h4><p>Sites, dates, and what is happening on them. We build the shoot calendar around work already on your books, so filming never adds a day to a job or slows a crew down.</p></div><div class="who">Jennifer and Caroline<br>Ongoing</div></div>
@@ -162,11 +178,111 @@
   </div>
 </section>
 
-<!-- 03 CALENDAR -->
+<!-- 03 SETUP WALKTHROUGH -->
+<section class="tint" id="setup">
+  <div class="wrap">
+    <div class="narrow">
+      <div class="eyebrow">03 &middot; Setting Up The Accounts</div>
+      <h2>Step by step. <em>In the order it has to happen.</em></h2>
+      <p class="lede">Every account is created by Henderick and owned by Henderick. Walton Creative Group is added afterward as a partner at the company level rather than as individuals. Agencies often do the reverse and own the accounts themselves. We do not work that way.</p>
+      <p class="lede">You should be able to work through this without us. If anything stalls, email Aaron and he will work through it with you, or come by next week and finish whatever is left. Nothing here is urgent enough to be worth guessing at.</p>
+    </div>
+
+    <div class="setup">
+
+      <div class="plat">
+        <header><h4>1. Google Business Profile</h4><div class="meta">Start first &middot; verification up to two weeks<br>Owner: Henderick</div></header>
+        <div class="body">
+          <p class="intro">This one starts first purely because of the waiting. Nothing visible happens while Google verifies, so the sooner it begins the sooner it is behind us.</p>
+          <ol class="steps">
+            <li>Sign in to <code>google.com/business</code> using the Henderick marketing address, not a personal account.</li>
+            <li>Search for Henderick. If a profile already exists, claim it. If Google says someone else manages it, choose <b>Request access</b> and Google will email the current manager, who has three days to respond. Tell us if that happens.</li>
+            <li>If no profile exists, create one. Business name, category, service area, phone, and website.</li>
+            <li>Choose a verification method when prompted. Google decides what is offered, usually a postcard, phone call, or video. Whichever appears, complete it.</li>
+            <li>Turn on two step verification on the Google account before adding anyone. Google can revoke access without it.</li>
+            <li>Open <b>Settings</b>, then <b>People and access</b>, then <b>Add</b>. Enter <code>aaron@waltoncreativegroup.com</code> and choose the <b>Manager</b> role.</li>
+          </ol>
+          <div class="watch"><b>Worth knowing</b>Manager is deliberately the right ceiling for us. It allows posting, responding to reviews, and updating hours, but not adding users or removing the listing. Those stay with you. Newly added people also wait seven days before certain actions, so adding us early avoids a delay later.</div>
+        </div>
+      </div>
+
+      <div class="plat">
+        <header><h4>2. Google Ads</h4><div class="meta">Twenty minutes &middot; one step that matters<br>Owner: Henderick</div></header>
+        <div class="body">
+          <p class="intro">The important part is simply who clicks create. An ads account created from inside an agency's account belongs to that agency. Created on your side, it is permanently yours and we are only linked to it.</p>
+          <ol class="steps">
+            <li>Go to <code>ads.google.com</code> and sign in with the Henderick marketing address.</li>
+            <li>Choose <b>Start now</b> and create the account. If Google pushes you toward a guided campaign setup, look for <b>Switch to Expert Mode</b>, then <b>Create an account without a campaign</b>. You do not need to build a campaign today.</li>
+            <li>Set the billing country to United States, currency to USD, and time zone to Central. <b>None of these can be changed later.</b></li>
+            <li>Add billing details. The card stays yours and we never have access to it.</li>
+            <li>Find the ten digit customer ID in the top right corner and send it to us.</li>
+            <li>We send a link request from our manager account. Approve it under <b>Admin</b>, then <b>Access and security</b>, then <b>Managers</b>. Requests expire, so approve it when it arrives.</li>
+          </ol>
+          <div class="watch"><b>Do not do this</b>Do not create the account by clicking a link or invitation from us. That is the one version of this that is painful to reverse. You create it, you own it, we request access afterward. We take Standard access. Admin and billing stay with you, and you can remove us at any time without involving us.</div>
+        </div>
+      </div>
+
+      <div class="plat">
+        <header><h4>3. Meta, the Facebook side</h4><div class="meta">Approval one day to one week<br>Owner: Henderick</div></header>
+        <div class="body">
+          <p class="intro">Answer the first question before starting anything else here, because it changes the order of everything after it.</p>
+          <ol class="steps">
+            <li><b>Decide whose personal profile hosts this.</b> Facebook requires a real person as administrator. Meta weights account age, history, and friend graph when deciding how much to trust an account, so an established profile is strongly preferred. A profile created this week that immediately builds a portfolio and begins advertising usually draws low spend limits and extra verification checkpoints. Waddell or Will, whichever of you already has one.</li>
+            <li>Turn on two factor authentication on that profile first. Meta expects it before access can be shared.</li>
+            <li>Go to <code>business.facebook.com</code> and create a business portfolio. Name it Henderick. Use the marketing address as the business email.</li>
+            <li>Inside the portfolio, create the <b>Facebook page</b> for Henderick. Create it here rather than separately, so it is owned by the portfolio from the start.</li>
+            <li>Open <b>Business settings</b>, then <b>Business info</b>, and start verification. Facebook will ask for the EIN and a card on file. Approval takes a day to a week.</li>
+            <li>Create the <b>ad account</b> inside the portfolio. Business settings, then Accounts, then Ad accounts, then Add.</li>
+            <li>Open <b>Partners</b> under Users, choose <b>Give a partner access to your assets</b>, and enter our business ID, which we will send you.</li>
+          </ol>
+          <div class="watch"><b>Worth knowing</b>The administrator role is invisible. Page and portfolio admins are never shown publicly, so this does not attach anyone's personal profile to the company pages. It also does not give Facebook anything about that profile it does not already have.</div>
+        </div>
+      </div>
+
+      <div class="plat">
+        <header><h4>4. Instagram</h4><div class="meta">Ten minutes &middot; no waiting<br>Owner: Henderick</div></header>
+        <div class="body">
+          <p class="intro">The easy one. Instagram has no account history requirement, so a fresh account carries no penalty. Before creating one, tell us what you remember about the existing account. Recovering it or starting clean are both fine. Knowing which is what matters.</p>
+          <ol class="steps">
+            <li>Create the account using the marketing address. We will send a few handle options to choose from rather than asking you to invent one.</li>
+            <li>Convert it to a professional account. <b>Settings</b>, then <b>Account type and tools</b>, then <b>Switch to professional account</b>. Choose Business.</li>
+            <li>In Meta Business Suite, add the Instagram account to the Henderick portfolio.</li>
+            <li>Connect it to the Facebook page so both can be managed together.</li>
+          </ol>
+          <div class="watch"><b>Worth knowing</b>An Instagram account can only belong to one business portfolio at a time. If the old account turns out to be attached to someone's personal profile or another portfolio, it has to be released from there before it can be added here. That is usually the reason an old account feels stuck.</div>
+        </div>
+      </div>
+
+      <div class="plat">
+        <header><h4>5. YouTube</h4><div class="meta">Fifteen minutes<br>Owner: Henderick</div></header>
+        <div class="body">
+          <p class="intro">YouTube has two separate layers of control and they are easy to confuse. Ownership sits on the Brand Account. Day to day access sits in Studio. Setting both up correctly now avoids an awkward conversation later.</p>
+          <ol class="steps">
+            <li>Signed in as the marketing address, create a channel and choose <b>Use a custom name</b>. That creates a Brand Account, which is what lets ownership exist separately from any one person's login.</li>
+            <li>Open <b>Settings</b>, then <b>Channel</b>, then <b>Advanced settings</b>, then <b>Manage permissions</b>.</li>
+            <li>Add a second owner from inside Henderick. This matters more than it sounds, because deleting the only owner's Google account deletes the channel with it.</li>
+            <li>Add <code>aaron@waltoncreativegroup.com</code> as a <b>Manager</b> or <b>Editor</b>. Either lets us upload and publish without being an owner.</li>
+          </ol>
+          <div class="watch"><b>Worth knowing</b>A channel that is not connected to a Brand Account can change managers but not owners, which is the trap most companies discover years later when the person who made the channel has moved on. Choosing a custom name at step one is what prevents it.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flagbox">
+      <h4>What this is built to protect</h4>
+      <p>At the end of any engagement, whenever that comes, Henderick keeps both pages, the Instagram account, both ad accounts with their full spend history, the tracking data and every audience built from it, the Business Profile, and the YouTube channel and its content. Our access ends with one revocation per platform. Nothing has to be transferred, recreated, or negotiated. That is the entire reason for the order above.</p>
+    </div>
+
+    <p class="disc">Platform menus change often, and these names reflect what each platform called them in October 2026. If a label does not match what you are seeing, it has most likely moved rather than disappeared. Email Aaron rather than guessing, particularly on anything involving ownership.</p>
+  </div>
+</section>
+
+<!-- 04 CALENDAR -->
 <section class="tint" id="calendar">
   <div class="wrap">
     <div class="narrow">
-      <div class="eyebrow">03 &middot; What We Are Filming</div>
+      <div class="eyebrow">04 &middot; What We Are Filming</div>
       <h2>The first ninety days, <em>against your calendar.</em></h2>
       <p class="lede">Built around work that is already happening rather than anything staged. Two capture sessions a month. A session is one subject carried from planning through filming, editing, and publishing, and two can share a single day in the field.</p>
     </div>
@@ -194,7 +310,7 @@
 <section class="dark">
   <div class="wrap">
     <div class="narrow">
-      <div class="eyebrow">04 &middot; What We Are Building</div>
+      <div class="eyebrow">05 &middot; What We Are Building</div>
       <h2>Alongside the filming.</h2>
     </div>
     <table>
@@ -221,7 +337,7 @@
 <section id="how">
   <div class="wrap">
     <div class="narrow">
-      <div class="eyebrow">05 &middot; How We Work Together</div>
+      <div class="eyebrow">06 &middot; How We Work Together</div>
       <h2>Rhythm, so nothing <em>goes quiet.</em></h2>
     </div>
     <div class="cards">
